@@ -1,0 +1,7516 @@
+﻿/*jquery.mobile.structure-1.2.0.css*/
+
+.ui-mobile, .ui-mobile body {
+    height: 99.9%;
+}
+
+    .ui-mobile fieldset, .ui-page {
+        padding: 0;
+        margin: 0;
+    }
+
+    .ui-mobile a img, .ui-mobile fieldset {
+        border-width: 0;
+    }
+
+.ui-mobile-viewport {
+    margin: 0;
+    overflow-x: visible;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body.ui-mobile-viewport, div.ui-mobile-viewport {
+    overflow-x: hidden;
+}
+
+.ui-mobile [data-role=page], .ui-mobile [data-role=dialog], .ui-page {
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    display: none;
+    border: 0;
+}
+
+.ui-mobile .ui-page-active {
+    display: block;
+    overflow: visible;
+}
+
+.ui-page {
+    outline: none;
+}
+
+@media screen and (orientation:portrait) {
+    .ui-mobile, .ui-mobile .ui-page {
+        min-height: 420px;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    .ui-mobile, .ui-mobile .ui-page {
+        min-height: 300px;
+    }
+}
+
+.ui-loading .ui-loader {
+    display: block;
+}
+
+.ui-loader {
+    display: none;
+    z-index: 9999999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border: 0;
+}
+
+.ui-loader-default {
+    background: none;
+    filter: Alpha(Opacity=18);
+    opacity: .18;
+    width: 46px;
+    height: 46px;
+    margin-left: -23px;
+    margin-top: -23px;
+}
+
+.ui-loader-verbose {
+    width: 200px;
+    filter: Alpha(Opacity=88);
+    opacity: .88;
+    box-shadow: 0 1px 1px -1px #fff;
+    height: auto;
+    margin-left: -110px;
+    margin-top: -43px;
+    padding: 10px;
+}
+
+.ui-loader-default h1 {
+    font-size: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.ui-loader-verbose h1 {
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+}
+
+.ui-loader .ui-icon {
+    background-color: #000;
+    display: block;
+    margin: 0;
+    width: 44px;
+    height: 44px;
+    padding: 1px;
+    -webkit-border-radius: 36px;
+    -moz-border-radius: 36px;
+    border-radius: 36px;
+}
+
+.ui-loader-verbose .ui-icon {
+    margin: 0 auto 10px;
+    filter: Alpha(Opacity=75);
+    opacity: .75;
+}
+
+.ui-loader-textonly {
+    padding: 15px;
+    margin-left: -115px;
+}
+
+    .ui-loader-textonly .ui-icon {
+        display: none;
+    }
+
+.ui-loader-fakefix {
+    position: absolute;
+}
+
+.ui-mobile-rendering > * {
+    visibility: hidden;
+}
+
+.ui-bar, .ui-body {
+    position: relative;
+    padding: .4em 15px;
+    overflow: hidden;
+    display: block;
+    clear: both;
+}
+
+.ui-bar {
+    font-size: 16px;
+    margin: 0;
+}
+
+    .ui-bar h1, .ui-bar h2, .ui-bar h3, .ui-bar h4, .ui-bar h5, .ui-bar h6 {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        display: inline-block;
+    }
+
+.ui-header, .ui-footer {
+    position: relative;
+    border-left-width: 0;
+    border-right-width: 0;
+    zoom: 1;
+}
+
+    .ui-header .ui-btn-left, .ui-header .ui-btn-right, .ui-footer .ui-btn-left, .ui-footer .ui-btn-right {
+        position: absolute;
+        top: 3px;
+    }
+
+    .ui-header .ui-btn-left, .ui-footer .ui-btn-left {
+        left: 5px;
+    }
+
+    .ui-header .ui-btn-right, .ui-footer .ui-btn-right {
+        right: 5px;
+    }
+
+    .ui-footer .ui-btn-icon-notext, .ui-header .ui-btn-icon-notext {
+        top: 6px;
+    }
+
+    .ui-header .ui-title, .ui-footer .ui-title {
+        min-height: 1.1em;
+        text-align: center;
+        font-size: 16px;
+        display: block;
+        margin: .6em 30% .8em;
+        padding: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        outline: 0 !important;
+    }
+
+    .ui-footer .ui-title {
+        margin: .6em 15px .8em;
+    }
+
+.ui-content {
+    border-width: 0;
+    overflow: visible;
+    overflow-x: hidden;
+    padding: 15px;
+}
+
+.ui-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.ui-nojs {
+    position: absolute;
+    left: -9999px;
+}
+
+.ui-hide-label label.ui-input-text, .ui-hide-label label.ui-select, .ui-hide-label label.ui-slider, .ui-hide-label label.ui-submit, .ui-hide-label .ui-controlgroup-label, .ui-hidden-accessible {
+    position: absolute !important;
+    left: -9999px;
+    clip: rect(1px);
+    clip: rect(1px,1px,1px,1px);
+}
+
+.ui-mobile-viewport-transitioning, .ui-mobile-viewport-transitioning .ui-page {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ui-page-pre-in {
+    opacity: 0;
+}
+
+.in {
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 350ms;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-duration: 350ms;
+}
+
+.out {
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 225ms;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 225ms;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.fade.out {
+    opacity: 0;
+    -webkit-animation-duration: 125ms;
+    -webkit-animation-name: fadeout;
+    -moz-animation-duration: 125ms;
+    -moz-animation-name: fadeout;
+}
+
+.fade.in {
+    opacity: 1;
+    -webkit-animation-duration: 225ms;
+    -webkit-animation-name: fadein;
+    -moz-animation-duration: 225ms;
+    -moz-animation-name: fadein;
+}
+
+.pop {
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+}
+
+    .pop.in {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        opacity: 1;
+        -webkit-animation-name: popin;
+        -moz-animation-name: popin;
+        -webkit-animation-duration: 350ms;
+        -moz-animation-duration: 350ms;
+    }
+
+    .pop.out {
+        -webkit-animation-name: fadeout;
+        -moz-animation-name: fadeout;
+        opacity: 0;
+        -webkit-animation-duration: 100ms;
+        -moz-animation-duration: 100ms;
+    }
+
+    .pop.in.reverse {
+        -webkit-animation-name: fadein;
+        -moz-animation-name: fadein;
+    }
+
+    .pop.out.reverse {
+        -webkit-transform: scale(.8);
+        -moz-transform: scale(.8);
+        -webkit-animation-name: popout;
+        -moz-animation-name: popout;
+    }
+
+@-webkit-keyframes popin {
+    from {
+        -webkit-transform: scale(.8);
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes popin {
+    from {
+        -moz-transform: scale(.8);
+        opacity: 0;
+    }
+
+    to {
+        -moz-transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes popout {
+    from {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        -webkit-transform: scale(.8);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes popout {
+    from {
+        -moz-transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        -moz-transform: scale(.8);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slideinfromright {
+    from {
+        -webkit-transform: translateX(100%);
+    }
+
+    to {
+        -webkit-transform: translateX(0);
+    }
+}
+
+@-moz-keyframes slideinfromright {
+    from {
+        -moz-transform: translateX(100%);
+    }
+
+    to {
+        -moz-transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes slideinfromleft {
+    from {
+        -webkit-transform: translateX(-100%);
+    }
+
+    to {
+        -webkit-transform: translateX(0);
+    }
+}
+
+@-moz-keyframes slideinfromleft {
+    from {
+        -moz-transform: translateX(-100%);
+    }
+
+    to {
+        -moz-transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes slideouttoleft {
+    from {
+        -webkit-transform: translateX(0);
+    }
+
+    to {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@-moz-keyframes slideouttoleft {
+    from {
+        -moz-transform: translateX(0);
+    }
+
+    to {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes slideouttoright {
+    from {
+        -webkit-transform: translateX(0);
+    }
+
+    to {
+        -webkit-transform: translateX(100%);
+    }
+}
+
+@-moz-keyframes slideouttoright {
+    from {
+        -moz-transform: translateX(0);
+    }
+
+    to {
+        -moz-transform: translateX(100%);
+    }
+}
+
+.slide.out, .slide.in {
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 350ms;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-duration: 350ms;
+}
+
+.slide.out {
+    -webkit-transform: translateX(-100%);
+    -webkit-animation-name: slideouttoleft;
+    -moz-transform: translateX(-100%);
+    -moz-animation-name: slideouttoleft;
+}
+
+.slide.in {
+    -webkit-transform: translateX(0);
+    -webkit-animation-name: slideinfromright;
+    -moz-transform: translateX(0);
+    -moz-animation-name: slideinfromright;
+}
+
+.slide.out.reverse {
+    -webkit-transform: translateX(100%);
+    -webkit-animation-name: slideouttoright;
+    -moz-transform: translateX(100%);
+    -moz-animation-name: slideouttoright;
+}
+
+.slide.in.reverse {
+    -webkit-transform: translateX(0);
+    -webkit-animation-name: slideinfromleft;
+    -moz-transform: translateX(0);
+    -moz-animation-name: slideinfromleft;
+}
+
+.slidefade.out {
+    -webkit-transform: translateX(-100%);
+    -webkit-animation-name: slideouttoleft;
+    -moz-transform: translateX(-100%);
+    -moz-animation-name: slideouttoleft;
+    -webkit-animation-duration: 225ms;
+    -moz-animation-duration: 225ms;
+}
+
+.slidefade.in {
+    -webkit-transform: translateX(0);
+    -webkit-animation-name: fadein;
+    -moz-transform: translateX(0);
+    -moz-animation-name: fadein;
+    -webkit-animation-duration: 200ms;
+    -moz-animation-duration: 200ms;
+}
+
+.slidefade.out.reverse {
+    -webkit-transform: translateX(100%);
+    -webkit-animation-name: slideouttoright;
+    -moz-transform: translateX(100%);
+    -moz-animation-name: slideouttoright;
+    -webkit-animation-duration: 200ms;
+    -moz-animation-duration: 200ms;
+}
+
+.slidefade.in.reverse {
+    -webkit-transform: translateX(0);
+    -webkit-animation-name: fadein;
+    -moz-transform: translateX(0);
+    -moz-animation-name: fadein;
+    -webkit-animation-duration: 200ms;
+    -moz-animation-duration: 200ms;
+}
+
+.slidedown.out {
+    -webkit-animation-name: fadeout;
+    -moz-animation-name: fadeout;
+    -webkit-animation-duration: 100ms;
+    -moz-animation-duration: 100ms;
+}
+
+.slidedown.in {
+    -webkit-transform: translateY(0);
+    -webkit-animation-name: slideinfromtop;
+    -moz-transform: translateY(0);
+    -moz-animation-name: slideinfromtop;
+    -webkit-animation-duration: 250ms;
+    -moz-animation-duration: 250ms;
+}
+
+    .slidedown.in.reverse {
+        -webkit-animation-name: fadein;
+        -moz-animation-name: fadein;
+        -webkit-animation-duration: 150ms;
+        -moz-animation-duration: 150ms;
+    }
+
+.slidedown.out.reverse {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -webkit-animation-name: slideouttotop;
+    -moz-animation-name: slideouttotop;
+    -webkit-animation-duration: 200ms;
+    -moz-animation-duration: 200ms;
+}
+
+@-webkit-keyframes slideinfromtop {
+    from {
+        -webkit-transform: translateY(-100%);
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+    }
+}
+
+@-moz-keyframes slideinfromtop {
+    from {
+        -moz-transform: translateY(-100%);
+    }
+
+    to {
+        -moz-transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes slideouttotop {
+    from {
+        -webkit-transform: translateY(0);
+    }
+
+    to {
+        -webkit-transform: translateY(-100%);
+    }
+}
+
+@-moz-keyframes slideouttotop {
+    from {
+        -moz-transform: translateY(0);
+    }
+
+    to {
+        -moz-transform: translateY(-100%);
+    }
+}
+
+.slideup.out {
+    -webkit-animation-name: fadeout;
+    -moz-animation-name: fadeout;
+    -webkit-animation-duration: 100ms;
+    -moz-animation-duration: 100ms;
+}
+
+.slideup.in {
+    -webkit-transform: translateY(0);
+    -webkit-animation-name: slideinfrombottom;
+    -moz-transform: translateY(0);
+    -moz-animation-name: slideinfrombottom;
+    -webkit-animation-duration: 250ms;
+    -moz-animation-duration: 250ms;
+}
+
+    .slideup.in.reverse {
+        -webkit-animation-name: fadein;
+        -moz-animation-name: fadein;
+        -webkit-animation-duration: 150ms;
+        -moz-animation-duration: 150ms;
+    }
+
+.slideup.out.reverse {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -webkit-animation-name: slideouttobottom;
+    -moz-animation-name: slideouttobottom;
+    -webkit-animation-duration: 200ms;
+    -moz-animation-duration: 200ms;
+}
+
+@-webkit-keyframes slideinfrombottom {
+    from {
+        -webkit-transform: translateY(100%);
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+    }
+}
+
+@-moz-keyframes slideinfrombottom {
+    from {
+        -moz-transform: translateY(100%);
+    }
+
+    to {
+        -moz-transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes slideouttobottom {
+    from {
+        -webkit-transform: translateY(0);
+    }
+
+    to {
+        -webkit-transform: translateY(100%);
+    }
+}
+
+@-moz-keyframes slideouttobottom {
+    from {
+        -moz-transform: translateY(0);
+    }
+
+    to {
+        -moz-transform: translateY(100%);
+    }
+}
+
+.viewport-flip {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    position: absolute;
+}
+
+.flip {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateX(0);
+    -moz-backface-visibility: hidden;
+    -moz-transform: translateX(0);
+}
+
+    .flip.out {
+        -webkit-transform: rotateY(-90deg) scale(.9);
+        -webkit-animation-name: flipouttoleft;
+        -webkit-animation-duration: 175ms;
+        -moz-transform: rotateY(-90deg) scale(.9);
+        -moz-animation-name: flipouttoleft;
+        -moz-animation-duration: 175ms;
+    }
+
+    .flip.in {
+        -webkit-animation-name: flipintoright;
+        -webkit-animation-duration: 225ms;
+        -moz-animation-name: flipintoright;
+        -moz-animation-duration: 225ms;
+    }
+
+    .flip.out.reverse {
+        -webkit-transform: rotateY(90deg) scale(.9);
+        -webkit-animation-name: flipouttoright;
+        -moz-transform: rotateY(90deg) scale(.9);
+        -moz-animation-name: flipouttoright;
+    }
+
+    .flip.in.reverse {
+        -webkit-animation-name: flipintoleft;
+        -moz-animation-name: flipintoleft;
+    }
+
+@-webkit-keyframes flipouttoleft {
+    from {
+        -webkit-transform: rotateY(0);
+    }
+
+    to {
+        -webkit-transform: rotateY(-90deg) scale(.9);
+    }
+}
+
+@-moz-keyframes flipouttoleft {
+    from {
+        -moz-transform: rotateY(0);
+    }
+
+    to {
+        -moz-transform: rotateY(-90deg) scale(.9);
+    }
+}
+
+@-webkit-keyframes flipouttoright {
+    from {
+        -webkit-transform: rotateY(0);
+    }
+
+    to {
+        -webkit-transform: rotateY(90deg) scale(.9);
+    }
+}
+
+@-moz-keyframes flipouttoright {
+    from {
+        -moz-transform: rotateY(0);
+    }
+
+    to {
+        -moz-transform: rotateY(90deg) scale(.9);
+    }
+}
+
+@-webkit-keyframes flipintoleft {
+    from {
+        -webkit-transform: rotateY(-90deg) scale(.9);
+    }
+
+    to {
+        -webkit-transform: rotateY(0);
+    }
+}
+
+@-moz-keyframes flipintoleft {
+    from {
+        -moz-transform: rotateY(-90deg) scale(.9);
+    }
+
+    to {
+        -moz-transform: rotateY(0);
+    }
+}
+
+@-webkit-keyframes flipintoright {
+    from {
+        -webkit-transform: rotateY(90deg) scale(.9);
+    }
+
+    to {
+        -webkit-transform: rotateY(0);
+    }
+}
+
+@-moz-keyframes flipintoright {
+    from {
+        -moz-transform: rotateY(90deg) scale(.9);
+    }
+
+    to {
+        -moz-transform: rotateY(0);
+    }
+}
+
+.viewport-turn {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    position: absolute;
+}
+
+.turn {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateX(0);
+    -webkit-transform-origin: 0;
+    -moz-backface-visibility: hidden;
+    -moz-transform: translateX(0);
+    -moz-transform-origin: 0;
+}
+
+    .turn.out {
+        -webkit-transform: rotateY(-90deg) scale(.9);
+        -webkit-animation-name: flipouttoleft;
+        -moz-transform: rotateY(-90deg) scale(.9);
+        -moz-animation-name: flipouttoleft;
+        -webkit-animation-duration: 125ms;
+        -moz-animation-duration: 125ms;
+    }
+
+    .turn.in {
+        -webkit-animation-name: flipintoright;
+        -moz-animation-name: flipintoright;
+        -webkit-animation-duration: 250ms;
+        -moz-animation-duration: 250ms;
+    }
+
+    .turn.out.reverse {
+        -webkit-transform: rotateY(90deg) scale(.9);
+        -webkit-animation-name: flipouttoright;
+        -moz-transform: rotateY(90deg) scale(.9);
+        -moz-animation-name: flipouttoright;
+    }
+
+    .turn.in.reverse {
+        -webkit-animation-name: flipintoleft;
+        -moz-animation-name: flipintoleft;
+    }
+
+@-webkit-keyframes flipouttoleft {
+    from {
+        -webkit-transform: rotateY(0);
+    }
+
+    to {
+        -webkit-transform: rotateY(-90deg) scale(.9);
+    }
+}
+
+@-moz-keyframes flipouttoleft {
+    from {
+        -moz-transform: rotateY(0);
+    }
+
+    to {
+        -moz-transform: rotateY(-90deg) scale(.9);
+    }
+}
+
+@-webkit-keyframes flipouttoright {
+    from {
+        -webkit-transform: rotateY(0);
+    }
+
+    to {
+        -webkit-transform: rotateY(90deg) scale(.9);
+    }
+}
+
+@-moz-keyframes flipouttoright {
+    from {
+        -moz-transform: rotateY(0);
+    }
+
+    to {
+        -moz-transform: rotateY(90deg) scale(.9);
+    }
+}
+
+@-webkit-keyframes flipintoleft {
+    from {
+        -webkit-transform: rotateY(-90deg) scale(.9);
+    }
+
+    to {
+        -webkit-transform: rotateY(0);
+    }
+}
+
+@-moz-keyframes flipintoleft {
+    from {
+        -moz-transform: rotateY(-90deg) scale(.9);
+    }
+
+    to {
+        -moz-transform: rotateY(0);
+    }
+}
+
+@-webkit-keyframes flipintoright {
+    from {
+        -webkit-transform: rotateY(90deg) scale(.9);
+    }
+
+    to {
+        -webkit-transform: rotateY(0);
+    }
+}
+
+@-moz-keyframes flipintoright {
+    from {
+        -moz-transform: rotateY(90deg) scale(.9);
+    }
+
+    to {
+        -moz-transform: rotateY(0);
+    }
+}
+
+.flow {
+    -webkit-transform-origin: 50% 30%;
+    -moz-transform-origin: 50% 30%;
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,.4);
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,.4);
+}
+
+.ui-dialog.flow {
+    -webkit-transform-origin: none;
+    -moz-transform-origin: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+.flow.out {
+    -webkit-transform: translateX(-100%) scale(.7);
+    -webkit-animation-name: flowouttoleft;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-duration: 350ms;
+    -moz-transform: translateX(-100%) scale(.7);
+    -moz-animation-name: flowouttoleft;
+    -moz-animation-timing-function: ease;
+    -moz-animation-duration: 350ms;
+}
+
+.flow.in {
+    -webkit-transform: translateX(0) scale(1);
+    -webkit-animation-name: flowinfromright;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-duration: 350ms;
+    -moz-transform: translateX(0) scale(1);
+    -moz-animation-name: flowinfromright;
+    -moz-animation-timing-function: ease;
+    -moz-animation-duration: 350ms;
+}
+
+.flow.out.reverse {
+    -webkit-transform: translateX(100%);
+    -webkit-animation-name: flowouttoright;
+    -moz-transform: translateX(100%);
+    -moz-animation-name: flowouttoright;
+}
+
+.flow.in.reverse {
+    -webkit-animation-name: flowinfromleft;
+    -moz-animation-name: flowinfromleft;
+}
+
+@-webkit-keyframes flowouttoleft {
+    0% {
+        -webkit-transform: translateX(0) scale(1);
+    }
+
+    60%,70% {
+        -webkit-transform: translateX(0) scale(.7);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%) scale(.7);
+    }
+}
+
+@-moz-keyframes flowouttoleft {
+    0% {
+        -moz-transform: translateX(0) scale(1);
+    }
+
+    60%,70% {
+        -moz-transform: translateX(0) scale(.7);
+    }
+
+    100% {
+        -moz-transform: translateX(-100%) scale(.7);
+    }
+}
+
+@-webkit-keyframes flowouttoright {
+    0% {
+        -webkit-transform: translateX(0) scale(1);
+    }
+
+    60%,70% {
+        -webkit-transform: translateX(0) scale(.7);
+    }
+
+    100% {
+        -webkit-transform: translateX(100%) scale(.7);
+    }
+}
+
+@-moz-keyframes flowouttoright {
+    0% {
+        -moz-transform: translateX(0) scale(1);
+    }
+
+    60%,70% {
+        -moz-transform: translateX(0) scale(.7);
+    }
+
+    100% {
+        -moz-transform: translateX(100%) scale(.7);
+    }
+}
+
+@-webkit-keyframes flowinfromleft {
+    0% {
+        -webkit-transform: translateX(-100%) scale(.7);
+    }
+
+    30%,40% {
+        -webkit-transform: translateX(0) scale(.7);
+    }
+
+    100% {
+        -webkit-transform: translateX(0) scale(1);
+    }
+}
+
+@-moz-keyframes flowinfromleft {
+    0% {
+        -moz-transform: translateX(-100%) scale(.7);
+    }
+
+    30%,40% {
+        -moz-transform: translateX(0) scale(.7);
+    }
+
+    100% {
+        -moz-transform: translateX(0) scale(1);
+    }
+}
+
+@-webkit-keyframes flowinfromright {
+    0% {
+        -webkit-transform: translateX(100%) scale(.7);
+    }
+
+    30%,40% {
+        -webkit-transform: translateX(0) scale(.7);
+    }
+
+    100% {
+        -webkit-transform: translateX(0) scale(1);
+    }
+}
+
+@-moz-keyframes flowinfromright {
+    0% {
+        -moz-transform: translateX(100%) scale(.7);
+    }
+
+    30%,40% {
+        -moz-transform: translateX(0) scale(.7);
+    }
+
+    100% {
+        -moz-transform: translateX(0) scale(1);
+    }
+}
+
+.ui-grid-a, .ui-grid-b, .ui-grid-c, .ui-grid-d {
+    overflow: hidden;
+}
+
+.ui-block-a, .ui-block-b, .ui-block-c, .ui-block-d, .ui-block-e {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    float: left;
+    min-height: 1px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ui-grid-solo .ui-block-a {
+    display: block;
+    float: none;
+}
+
+.ui-grid-a .ui-block-a, .ui-grid-a .ui-block-b {
+    width: 49.95%;
+}
+
+.ui-grid-a > :nth-child(n) {
+    width: 50%;
+    margin-right: -.5px;
+}
+
+.ui-grid-a .ui-block-a {
+    clear: left;
+}
+
+.ui-grid-b .ui-block-a, .ui-grid-b .ui-block-b, .ui-grid-b .ui-block-c {
+    width: 33.25%;
+}
+
+.ui-grid-b > :nth-child(n) {
+    width: 33.333%;
+    margin-right: -.5px;
+}
+
+.ui-grid-b .ui-block-a {
+    clear: left;
+}
+
+.ui-grid-c .ui-block-a, .ui-grid-c .ui-block-b, .ui-grid-c .ui-block-c, .ui-grid-c .ui-block-d {
+    width: 24.925%;
+}
+
+.ui-grid-c > :nth-child(n) {
+    width: 25%;
+    margin-right: -.5px;
+}
+
+.ui-grid-c .ui-block-a {
+    clear: left;
+}
+
+.ui-grid-d .ui-block-a, .ui-grid-d .ui-block-b, .ui-grid-d .ui-block-c, .ui-grid-d .ui-block-d, .ui-grid-d .ui-block-e {
+    width: 19.925%;
+}
+
+.ui-grid-d > :nth-child(n) {
+    width: 20%;
+}
+
+.ui-grid-d .ui-block-a {
+    clear: left;
+}
+
+.ui-header-fixed, .ui-footer-fixed {
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.ui-header-fixed {
+    top: 0;
+}
+
+.ui-footer-fixed {
+    bottom: 0;
+}
+
+.ui-header-fullscreen, .ui-footer-fullscreen {
+    filter: Alpha(Opacity=90);
+    opacity: .9;
+}
+
+.ui-page-header-fixed {
+    padding-top: 2.6875em;
+}
+
+.ui-page-footer-fixed {
+    padding-bottom: 2.6875em;
+}
+
+.ui-page-header-fullscreen .ui-content, .ui-page-footer-fullscreen .ui-content {
+    padding: 0;
+}
+
+.ui-fixed-hidden {
+    position: absolute;
+}
+
+.ui-page-header-fullscreen .ui-fixed-hidden, .ui-page-footer-fullscreen .ui-fixed-hidden {
+    left: -9999px;
+}
+
+.ui-header-fixed .ui-btn, .ui-footer-fixed .ui-btn {
+    z-index: 10;
+}
+
+.ui-navbar {
+    max-width: 100%;
+}
+
+    .ui-navbar.ui-mini {
+        margin: 0;
+    }
+
+    .ui-navbar ul:before, .ui-navbar ul:after {
+        content: " ";
+        display: table;
+    }
+
+    .ui-navbar ul:after {
+        clear: both;
+    }
+
+    .ui-navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        display: block;
+        border: 0;
+        max-width: 100%;
+        overflow: visible;
+        zoom: 1;
+    }
+
+    .ui-navbar li .ui-btn {
+        display: block;
+        text-align: center;
+        margin: 0 -1px 0 0;
+        border-right-width: 0;
+    }
+
+    .ui-navbar li .ui-btn-icon-right .ui-icon {
+        right: 6px;
+    }
+
+    .ui-navbar li:last-child .ui-btn, .ui-navbar .ui-grid-duo .ui-block-b .ui-btn {
+        margin-right: 0;
+        border-right-width: 1px;
+    }
+
+.ui-header .ui-navbar li:last-child .ui-btn, .ui-footer .ui-navbar li:last-child .ui-btn, .ui-header .ui-navbar .ui-grid-duo .ui-block-b .ui-btn, .ui-footer .ui-navbar .ui-grid-duo .ui-block-b .ui-btn {
+    margin-right: -1px;
+    border-right-width: 0;
+}
+
+.ui-navbar .ui-grid-duo li.ui-block-a:last-child .ui-btn {
+    margin-right: -1px;
+    border-right-width: 1px;
+}
+
+.ui-header .ui-navbar li .ui-btn, .ui-footer .ui-navbar li .ui-btn {
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.ui-header .ui-navbar .ui-grid-b li.ui-block-c .ui-btn, .ui-footer .ui-navbar .ui-grid-b li.ui-block-c .ui-btn {
+    margin-right: -5px;
+}
+
+.ui-header .ui-navbar .ui-grid-c li.ui-block-d .ui-btn, .ui-footer .ui-navbar .ui-grid-c li.ui-block-d .ui-btn, .ui-header .ui-navbar .ui-grid-d li.ui-block-e .ui-btn, .ui-footer .ui-navbar .ui-grid-d li.ui-block-e .ui-btn {
+    margin-right: -4px;
+}
+
+.ui-header .ui-navbar .ui-grid-b li.ui-block-c .ui-btn-icon-right .ui-icon, .ui-footer .ui-navbar .ui-grid-b li.ui-block-c .ui-btn-icon-right .ui-icon, .ui-header .ui-navbar .ui-grid-c li.ui-block-d .ui-btn-icon-right .ui-icon, .ui-footer .ui-navbar .ui-grid-c li.ui-block-d .ui-btn-icon-right .ui-icon, .ui-header .ui-navbar .ui-grid-d li.ui-block-e .ui-btn-icon-right .ui-icon, .ui-footer .ui-navbar .ui-grid-d li.ui-block-e .ui-btn-icon-right .ui-icon {
+    right: 8px;
+}
+
+.ui-navbar li .ui-btn .ui-btn-inner {
+    padding-top: .7em;
+    padding-bottom: .8em;
+}
+
+.ui-navbar li .ui-btn-icon-top .ui-btn-inner {
+    padding-top: 30px;
+}
+
+.ui-navbar li .ui-btn-icon-bottom .ui-btn-inner {
+    padding-bottom: 30px;
+}
+
+.ui-btn {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    margin: .5em 0;
+    padding: 0;
+}
+
+.ui-mini {
+    margin-top: .25em;
+    margin-bottom: .25em;
+}
+
+.ui-btn-left, .ui-btn-right, .ui-input-clear, .ui-btn-inline, .ui-grid-a .ui-btn, .ui-grid-b .ui-btn, .ui-grid-c .ui-btn, .ui-grid-d .ui-btn, .ui-grid-e .ui-btn, .ui-grid-solo .ui-btn {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.ui-btn-inner {
+    font-size: 16px;
+    padding: .6em 20px;
+    min-width: .75em;
+    display: block;
+    position: relative;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    zoom: 1;
+}
+
+.ui-btn input, .ui-btn button {
+    z-index: 2;
+}
+
+.ui-btn-left, .ui-btn-right, .ui-btn-inline {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ui-mobile .ui-btn-left, .ui-mobile .ui-btn-right {
+    margin: 0;
+}
+
+.ui-btn-block {
+    display: block;
+}
+
+.ui-header > .ui-btn, .ui-footer > .ui-btn {
+    display: inline-block;
+    margin: 0;
+}
+
+.ui-header .ui-btn-block, .ui-footer .ui-btn-block {
+    display: block;
+}
+
+.ui-header .ui-btn-inner, .ui-footer .ui-btn-inner, .ui-mini .ui-btn-inner {
+    font-size: 12.5px;
+    padding: .55em 11px .5em;
+}
+
+.ui-fullsize .ui-btn-inner, .ui-fullsize .ui-btn-inner {
+    font-size: 16px;
+    padding: .6em 20px;
+}
+
+.ui-btn-icon-notext {
+    width: 24px;
+    height: 24px;
+}
+
+    .ui-btn-icon-notext .ui-btn-inner {
+        padding: 0;
+        height: 100%;
+    }
+
+        .ui-btn-icon-notext .ui-btn-inner .ui-icon {
+            margin: 2px 1px 2px 3px;
+            float: left;
+        }
+
+.ui-btn-text {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.ui-btn-icon-notext .ui-btn-text {
+    position: absolute;
+    left: -9999px;
+}
+
+.ui-btn-icon-left .ui-btn-inner {
+    padding-left: 40px;
+}
+
+.ui-btn-icon-right .ui-btn-inner {
+    padding-right: 40px;
+}
+
+.ui-btn-icon-top .ui-btn-inner {
+    padding-top: 40px;
+}
+
+.ui-btn-icon-bottom .ui-btn-inner {
+    padding-bottom: 40px;
+}
+
+.ui-header .ui-btn-icon-left .ui-btn-inner, .ui-footer .ui-btn-icon-left .ui-btn-inner, .ui-mini.ui-btn-icon-left .ui-btn-inner, .ui-mini .ui-btn-icon-left .ui-btn-inner {
+    padding-left: 30px;
+}
+
+.ui-header .ui-btn-icon-right .ui-btn-inner, .ui-footer .ui-btn-icon-right .ui-btn-inner, .ui-mini.ui-btn-icon-right .ui-btn-inner, .ui-mini .ui-btn-icon-right .ui-btn-inner {
+    padding-right: 30px;
+}
+
+.ui-header .ui-btn-icon-top .ui-btn-inner, .ui-footer .ui-btn-icon-top .ui-btn-inner {
+    padding: 30px 3px .5em 3px;
+}
+
+.ui-mini.ui-btn-icon-top .ui-btn-inner, .ui-mini .ui-btn-icon-top .ui-btn-inner {
+    padding-top: 30px;
+}
+
+.ui-header .ui-btn-icon-bottom .ui-btn-inner, .ui-footer .ui-btn-icon-bottom .ui-btn-inner {
+    padding: .55em 3px 30px 3px;
+}
+
+.ui-mini.ui-btn-icon-bottom .ui-btn-inner, .ui-mini .ui-btn-icon-bottom .ui-btn-inner {
+    padding-bottom: 30px;
+}
+
+.ui-btn-icon-notext .ui-icon {
+    display: block;
+    z-index: 0;
+}
+
+.ui-btn-icon-left > .ui-btn-inner > .ui-icon, .ui-btn-icon-right > .ui-btn-inner > .ui-icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+}
+
+.ui-btn-icon-top .ui-btn-inner .ui-icon, .ui-btn-icon-bottom .ui-btn-inner .ui-icon {
+    position: absolute;
+    left: 50%;
+    margin-left: -9px;
+}
+
+.ui-btn-icon-left .ui-icon {
+    left: 10px;
+}
+
+.ui-btn-icon-right .ui-icon {
+    right: 10px;
+}
+
+.ui-btn-icon-top .ui-icon {
+    top: 10px;
+}
+
+.ui-btn-icon-bottom .ui-icon {
+    top: auto;
+    bottom: 10px;
+}
+
+.ui-header .ui-btn-icon-left .ui-icon, .ui-footer .ui-btn-icon-left .ui-icon, .ui-mini.ui-btn-icon-left .ui-icon, .ui-mini .ui-btn-icon-left .ui-icon {
+    left: 5px;
+}
+
+.ui-header .ui-btn-icon-right .ui-icon, .ui-footer .ui-btn-icon-right .ui-icon, .ui-mini.ui-btn-icon-right .ui-icon, .ui-mini .ui-btn-icon-right .ui-icon {
+    right: 5px;
+}
+
+.ui-header .ui-btn-icon-top .ui-icon, .ui-footer .ui-btn-icon-top .ui-icon, .ui-mini.ui-btn-icon-top .ui-icon, .ui-mini .ui-btn-icon-top .ui-icon {
+    top: 5px;
+}
+
+.ui-header .ui-btn-icon-bottom .ui-icon, .ui-footer .ui-btn-icon-bottom .ui-icon, .ui-mini.ui-btn-icon-bottom .ui-icon, .ui-mini .ui-btn-icon-bottom .ui-icon {
+    bottom: 5px;
+}
+
+.ui-btn-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+    cursor: pointer;
+    background: #fff;
+    background: rgba(255,255,255,0);
+    filter: Alpha(Opacity=0);
+    opacity: .1;
+    font-size: 1px;
+    border: none;
+    text-indent: -9999px;
+}
+
+.ui-disabled .ui-btn-hidden {
+    display: none;
+}
+
+.ui-disabled {
+    z-index: 1;
+}
+
+.ui-field-contain .ui-btn.ui-submit {
+    margin: 0;
+}
+
+label.ui-submit {
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 0 0 .3em;
+    display: block;
+}
+
+@media all and (min-width:450px) {
+    .ui-field-contain label.ui-submit {
+        vertical-align: top;
+        display: inline-block;
+        width: 20%;
+        margin: 0 2% 0 0;
+    }
+
+    .ui-field-contain .ui-btn.ui-submit {
+        width: 78%;
+        display: inline-block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .ui-hide-label .ui-btn.ui-submit {
+        width: auto;
+        display: block;
+    }
+}
+
+.ui-collapsible-inset {
+    margin: .5em 0;
+}
+
+.ui-collapsible-heading {
+    font-size: 16px;
+    display: block;
+    margin: 0 -15px;
+    padding: 0;
+    position: relative;
+}
+
+.ui-collapsible-inset .ui-collapsible-heading {
+    margin: 0;
+}
+
+.ui-collapsible-heading .ui-btn {
+    text-align: left;
+    margin: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+.ui-collapsible-inset .ui-collapsible-heading .ui-btn {
+    border-right-width: 1px;
+    border-left-width: 1px;
+}
+
+.ui-collapsible-collapsed + .ui-collapsible:not(.ui-collapsible-inset) .ui-collapsible-heading .ui-btn {
+    border-top-width: 0;
+}
+
+.ui-collapsible-set .ui-collapsible:not(.ui-collapsible-inset) .ui-collapsible-heading .ui-btn {
+    border-top-width: 1px;
+}
+
+.ui-collapsible-heading .ui-btn-inner, .ui-collapsible-heading .ui-btn-icon-left .ui-btn-inner {
+    padding-left: 40px;
+}
+
+.ui-collapsible-heading .ui-btn-icon-right .ui-btn-inner {
+    padding-left: 12px;
+    padding-right: 40px;
+}
+
+.ui-collapsible-heading .ui-btn-icon-top .ui-btn-inner, .ui-collapsible-heading .ui-btn-icon-bottom .ui-btn-inner {
+    padding-right: 40px;
+    text-align: center;
+}
+
+.ui-collapsible-heading .ui-btn span.ui-btn {
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    margin: -12px 0 0 0;
+    width: 20px;
+    height: 20px;
+    padding: 1px 0 1px 2px;
+    text-indent: -9999px;
+}
+
+    .ui-collapsible-heading .ui-btn span.ui-btn .ui-btn-inner {
+        padding: 10px 0;
+    }
+
+    .ui-collapsible-heading .ui-btn span.ui-btn .ui-icon {
+        left: 0;
+        margin-top: -10px;
+    }
+
+.ui-collapsible-heading-status {
+    position: absolute;
+    top: -9999px;
+    left: 0;
+}
+
+.ui-collapsible-content {
+    display: block;
+    margin: 0 -15px;
+    padding: 10px 15px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top: none;
+    background-image: none;
+}
+
+.ui-collapsible-inset .ui-collapsible-content {
+    margin: 0;
+    border-right-width: 1px;
+    border-left-width: 1px;
+}
+
+.ui-collapsible-content-collapsed {
+    display: none;
+}
+
+.ui-collapsible-set {
+    margin: .5em 0;
+}
+
+    .ui-collapsible-set .ui-collapsible {
+        margin: -1px 0 0;
+    }
+
+        .ui-collapsible-set .ui-collapsible:first-child {
+            margin-top: 0;
+        }
+
+.ui-controlgroup, fieldset.ui-controlgroup {
+    padding: 0;
+    margin: .5em 0;
+    zoom: 1;
+}
+
+    .ui-controlgroup.ui-mini, fieldset.ui-controlgroup.ui-mini {
+        margin: .25em 0;
+    }
+
+.ui-field-contain .ui-controlgroup, .ui-field-contain fieldset.ui-controlgroup {
+    margin: 0;
+}
+
+.ui-bar .ui-controlgroup {
+    margin: 0 5px;
+}
+
+.ui-controlgroup-label {
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 0 0 .4em;
+}
+
+.ui-controlgroup li {
+    list-style: none;
+}
+
+.ui-controlgroup-vertical .ui-btn, .ui-controlgroup-vertical .ui-checkbox, .ui-controlgroup-vertical .ui-radio {
+    margin: 0;
+    border-bottom-width: 0;
+}
+
+.ui-controlgroup-vertical .ui-controlgroup-last {
+    border-bottom-width: 1px;
+}
+
+.ui-controlgroup-controls label.ui-select {
+    position: absolute;
+    left: -9999px;
+}
+
+.ui-controlgroup .ui-btn-icon-notext {
+    width: auto;
+    height: auto;
+    top: auto;
+}
+
+    .ui-controlgroup .ui-btn-icon-notext .ui-btn-inner {
+        height: 20px;
+        padding: .6em 20px .6em 20px;
+    }
+
+.ui-controlgroup-horizontal .ui-btn-icon-notext .ui-btn-inner {
+    width: 18px;
+}
+
+.ui-controlgroup.ui-mini .ui-btn-icon-notext .ui-btn-inner, .ui-header .ui-controlgroup .ui-btn-icon-notext .ui-btn-inner, .ui-footer .ui-controlgroup .ui-btn-icon-notext .ui-btn-inner {
+    height: 16px;
+    padding: .55em 11px .5em 11px;
+}
+
+.ui-controlgroup .ui-btn-icon-notext .ui-btn-inner .ui-icon {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin: -9px -9px 0 0;
+}
+
+.ui-controlgroup-horizontal .ui-controlgroup-controls:before, .ui-controlgroup-horizontal .ui-controlgroup-controls:after {
+    content: "";
+    display: table;
+}
+
+.ui-controlgroup-horizontal .ui-controlgroup-controls:after {
+    clear: both;
+}
+
+.ui-controlgroup-horizontal .ui-controlgroup-controls {
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+}
+
+.ui-controlgroup-horizontal .ui-btn-inner {
+    text-align: center;
+}
+
+.ui-controlgroup-horizontal.ui-mini .ui-btn-inner {
+    height: 16px;
+    line-height: 16px;
+}
+
+.ui-controlgroup-horizontal .ui-btn, .ui-controlgroup-horizontal .ui-select, .ui-controlgroup-horizontal .ui-checkbox, .ui-controlgroup-horizontal .ui-radio {
+    float: left;
+    clear: none;
+    margin: 0 -1px 0 0;
+}
+
+    .ui-controlgroup-horizontal .ui-select .ui-btn, .ui-controlgroup-horizontal .ui-checkbox .ui-btn, .ui-controlgroup-horizontal .ui-radio .ui-btn {
+        float: none;
+        margin: 0;
+    }
+
+    .ui-controlgroup-horizontal .ui-controlgroup-last, .ui-controlgroup-horizontal .ui-select:last-child, .ui-controlgroup-horizontal .ui-checkbox:last-child, .ui-controlgroup-horizontal .ui-radio:last-child {
+        margin-right: 0;
+    }
+
+.ui-controlgroup .ui-checkbox label, .ui-controlgroup .ui-radio label {
+    font-size: 16px;
+}
+
+@media all and (min-width:450px) {
+    .ui-field-contain .ui-controlgroup-label {
+        vertical-align: top;
+        display: inline-block;
+        width: 20%;
+        margin: 0 2% 0 0;
+    }
+
+    .ui-field-contain .ui-controlgroup-controls {
+        width: 78%;
+        display: inline-block;
+    }
+
+    .ui-field-contain .ui-controlgroup .ui-select {
+        width: 100%;
+        display: block;
+    }
+
+    .ui-field-contain .ui-controlgroup-horizontal .ui-select {
+        width: auto;
+    }
+
+    .ui-hide-label .ui-controlgroup-controls {
+        width: 100%;
+    }
+}
+
+.ui-dialog {
+    background: none !important;
+}
+
+.ui-dialog-contain {
+    width: 92.5%;
+    max-width: 500px;
+    margin: 10% auto 15px auto;
+    padding: 0;
+    position: relative;
+    top: -15px;
+}
+
+    .ui-dialog-contain > .ui-header, .ui-dialog-contain > .ui-content, .ui-dialog-contain > .ui-footer {
+        display: block;
+        position: relative;
+        width: auto;
+        margin: 0;
+    }
+
+    .ui-dialog-contain > .ui-header {
+        border: none;
+        overflow: hidden;
+        z-index: 10;
+        padding: 0;
+    }
+
+    .ui-dialog-contain > .ui-content {
+        padding: 15px;
+    }
+
+    .ui-dialog-contain > .ui-footer {
+        z-index: 10;
+        padding: 0 15px;
+    }
+
+.ui-popup-open .ui-header-fixed, .ui-popup-open .ui-footer-fixed {
+    position: absolute !important;
+}
+
+.ui-popup-screen {
+    background-image: url(data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    position: absolute;
+    filter: Alpha(Opacity=0);
+    opacity: 0;
+    z-index: 1099;
+}
+
+    .ui-popup-screen.in {
+        opacity: 0.5;
+        filter: Alpha(Opacity=50);
+    }
+
+    .ui-popup-screen.out {
+        opacity: 0;
+        filter: Alpha(Opacity=0);
+    }
+
+.ui-popup-container {
+    z-index: 1100;
+    display: inline-block;
+    position: absolute;
+    padding: 0;
+    outline: 0;
+}
+
+.ui-popup {
+    position: relative;
+}
+
+    .ui-popup.ui-content, .ui-popup .ui-content {
+        overflow: visible;
+    }
+
+    .ui-popup > p, .ui-popup > h1, .ui-popup > h2, .ui-popup > h3, .ui-popup > h4, .ui-popup > h5, .ui-popup > h6 {
+        margin: .5em 7px;
+    }
+
+    .ui-popup > span {
+        display: block;
+        margin: .5em 7px;
+    }
+
+    .ui-popup .ui-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+
+.ui-popup-container .ui-content > p, .ui-popup-container .ui-content > h1, .ui-popup-container .ui-content > h2, .ui-popup-container .ui-content > h3, .ui-popup-container .ui-content > h4, .ui-popup-container .ui-content > h5, .ui-popup-container .ui-content > h6 {
+    margin: .5em 0;
+}
+
+.ui-popup-container .ui-content > span {
+    margin: 0;
+}
+
+.ui-popup-container .ui-content > p:first-child, .ui-popup-container .ui-content > h1:first-child, .ui-popup-container .ui-content > h2:first-child, .ui-popup-container .ui-content > h3:first-child, .ui-popup-container .ui-content > h4:first-child, .ui-popup-container .ui-content > h5:first-child, .ui-popup-container .ui-content > h6:first-child {
+    margin-top: 0;
+}
+
+.ui-popup-container .ui-content > p:last-child, .ui-popup-container .ui-content > h1:last-child, .ui-popup-container .ui-content > h2:last-child, .ui-popup-container .ui-content > h3:last-child, .ui-popup-container .ui-content > h4:last-child, .ui-popup-container .ui-content > h5:last-child, .ui-popup-container .ui-content > h6:last-child {
+    margin-bottom: 0;
+}
+
+.ui-popup > img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+.ui-popup iframe {
+    vertical-align: middle;
+}
+
+@media all and (min-width:450px) {
+    .ui-popup .ui-field-contain label.ui-submit, .ui-popup .ui-field-contain .ui-controlgroup-label, .ui-popup .ui-field-contain label.ui-select, .ui-popup .ui-field-contain label.ui-input-text {
+        font-size: 16px;
+        line-height: 1.4;
+        display: block;
+        font-weight: normal;
+        margin: 0 0 .3em;
+    }
+
+    .ui-popup .ui-field-contain .ui-btn.ui-submit, .ui-popup .ui-field-contain .ui-controlgroup-controls, .ui-popup .ui-field-contain .ui-select, .ui-popup .ui-field-contain input.ui-input-text, .ui-popup .ui-field-contain textarea.ui-input-text, .ui-popup .ui-field-contain .ui-input-search {
+        width: 100%;
+        display: block;
+    }
+}
+
+.ui-popup > .ui-btn-left, .ui-popup > .ui-btn-right {
+    position: absolute;
+    top: -9px;
+    margin: 0;
+    z-index: 1101;
+}
+
+.ui-popup > .ui-btn-left {
+    left: -9px;
+}
+
+.ui-popup > .ui-btn-right {
+    right: -9px;
+}
+
+.ui-popup.ui-corner-all > .ui-header, .ui-popup.ui-corner-all ~ .ui-content, .ui-popup.ui-corner-all > .ui-content:first-child {
+    -webkit-border-top-left-radius: inherit;
+    border-top-left-radius: inherit;
+    -webkit-border-top-right-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+    .ui-popup.ui-corner-all > .ui-content, .ui-popup.ui-corner-all > .ui-footer, .ui-popup.ui-corner-all > .ui-header:nth-child(n):last-child {
+        -webkit-border-bottom-left-radius: inherit;
+        border-bottom-left-radius: inherit;
+        -webkit-border-bottom-right-radius: inherit;
+        border-bottom-right-radius: inherit;
+    }
+
+        .ui-popup.ui-corner-all > .ui-content:nth-child(2), .ui-popup.ui-corner-all > .ui-header:nth-child(2) {
+            -webkit-border-top-left-radius: 0;
+            border-top-left-radius: 0;
+            -webkit-border-top-right-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .ui-popup.ui-corner-all > .ui-content:nth-last-child(1n+2), .ui-popup.ui-corner-all > .ui-footer:nth-last-child(1n+2) {
+            -webkit-border-bottom-left-radius: 0;
+            border-bottom-left-radius: 0;
+            -webkit-border-bottom-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .ui-popup.ui-corner-all > .ui-header:only-child, .ui-popup.ui-corner-all > .ui-footer:only-child {
+            -webkit-border-radius: inherit;
+            border-radius: inherit;
+        }
+
+.ui-checkbox, .ui-radio {
+    position: relative;
+    clear: both;
+    margin: 0;
+    z-index: 1;
+}
+
+    .ui-checkbox .ui-btn, .ui-radio .ui-btn {
+        margin-top: .5em;
+        margin-bottom: .5em;
+        text-align: left;
+        z-index: 2;
+    }
+
+        .ui-checkbox .ui-btn.ui-mini, .ui-radio .ui-btn.ui-mini {
+            margin: .25em 0;
+        }
+
+.ui-controlgroup .ui-checkbox .ui-btn, .ui-controlgroup .ui-radio .ui-btn {
+    margin: 0;
+}
+
+.ui-checkbox .ui-btn-inner, .ui-radio .ui-btn-inner {
+    white-space: normal;
+}
+
+.ui-checkbox .ui-btn-icon-left .ui-btn-inner, .ui-radio .ui-btn-icon-left .ui-btn-inner {
+    padding-left: 45px;
+}
+
+.ui-checkbox .ui-mini.ui-btn-icon-left .ui-btn-inner, .ui-radio .ui-mini.ui-btn-icon-left .ui-btn-inner {
+    padding-left: 36px;
+}
+
+.ui-checkbox .ui-btn-icon-right .ui-btn-inner, .ui-radio .ui-btn-icon-right .ui-btn-inner {
+    padding-right: 45px;
+}
+
+.ui-checkbox .ui-mini.ui-btn-icon-right .ui-btn-inner, .ui-radio .ui-mini.ui-btn-icon-right .ui-btn-inner {
+    padding-right: 36px;
+}
+
+.ui-checkbox .ui-btn-icon-top .ui-btn-inner, .ui-radio .ui-btn-icon-top .ui-btn-inner {
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+}
+
+.ui-checkbox .ui-btn-icon-bottom .ui-btn-inner, .ui-radio .ui-btn-icon-bottom .ui-btn-inner {
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+}
+
+.ui-checkbox .ui-icon, .ui-radio .ui-icon {
+    top: 1.1em;
+}
+
+.ui-checkbox .ui-btn-icon-left .ui-icon, .ui-radio .ui-btn-icon-left .ui-icon {
+    left: 15px;
+}
+
+.ui-checkbox .ui-mini.ui-btn-icon-left .ui-icon, .ui-radio .ui-mini.ui-btn-icon-left .ui-icon {
+    left: 9px;
+}
+
+.ui-checkbox .ui-btn-icon-right .ui-icon, .ui-radio .ui-btn-icon-right .ui-icon {
+    right: 15px;
+}
+
+.ui-checkbox .ui-mini.ui-btn-icon-right .ui-icon, .ui-radio .ui-mini.ui-btn-icon-right .ui-icon {
+    right: 9px;
+}
+
+.ui-checkbox .ui-btn-icon-top .ui-icon, .ui-radio .ui-btn-icon-top .ui-icon {
+    top: 10px;
+}
+
+.ui-checkbox .ui-btn-icon-bottom .ui-icon, .ui-radio .ui-btn-icon-bottom .ui-icon {
+    top: auto;
+    bottom: 10px;
+}
+
+.ui-checkbox .ui-btn-icon-right .ui-icon, .ui-radio .ui-btn-icon-right .ui-icon {
+    right: 15px;
+}
+
+.ui-checkbox .ui-mini.ui-btn-icon-right .ui-icon, .ui-radio .ui-mini.ui-btn-icon-right .ui-icon {
+    right: 9px;
+}
+
+.ui-checkbox input, .ui-radio input {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    margin: -5px 0 0 0;
+    outline: 0 !important;
+    z-index: 1;
+}
+
+.ui-field-contain, fieldset.ui-field-contain {
+    padding: .8em 0;
+    margin: 0;
+    border-width: 0 0 1px 0;
+    overflow: visible;
+}
+
+    .ui-field-contain:last-child {
+        border-bottom-width: 0;
+    }
+
+.ui-field-contain {
+    max-width: 100%;
+}
+
+@media all and (min-width:450px) {
+    .ui-field-contain, .ui-mobile fieldset.ui-field-contain {
+        border-width: 0;
+        padding: 0;
+        margin: 1em 0;
+    }
+}
+
+.ui-select {
+    display: block;
+    position: relative;
+}
+
+    .ui-select select {
+        position: absolute;
+        left: -9999px;
+        top: -9999px;
+    }
+
+    .ui-select .ui-btn {
+        overflow: hidden;
+        opacity: 1;
+    }
+
+.ui-field-contain .ui-select .ui-btn {
+    margin: 0;
+}
+
+.ui-select .ui-btn select {
+    cursor: pointer;
+    -webkit-appearance: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 1.5em;
+    min-height: 100%;
+    height: 3em;
+    max-height: 100%;
+    filter: Alpha(Opacity=0);
+    opacity: 0;
+    z-index: 2;
+}
+
+.ui-select .ui-disabled {
+    opacity: .3;
+}
+
+    .ui-select .ui-disabled select {
+        display: none;
+    }
+
+@-moz-document url-prefix() {
+    .ui-select .ui-btn select {
+        opacity: 0.0001;
+    }
+}
+
+.ui-select .ui-btn.ui-select-nativeonly {
+    border-radius: 0;
+    border: 0;
+}
+
+    .ui-select .ui-btn.ui-select-nativeonly select {
+        opacity: 1;
+        text-indent: 0;
+        display: block;
+    }
+
+.ui-select .ui-disabled.ui-select-nativeonly .ui-btn-inner {
+    opacity: 0;
+}
+
+.ui-select .ui-btn-icon-right .ui-btn-inner, .ui-select .ui-li-has-count .ui-btn-inner {
+    padding-right: 45px;
+}
+
+.ui-select .ui-mini.ui-btn-icon-right .ui-btn-inner {
+    padding-right: 32px;
+}
+
+.ui-select .ui-btn-icon-right.ui-li-has-count .ui-btn-inner {
+    padding-right: 80px;
+}
+
+.ui-select .ui-mini.ui-btn-icon-right.ui-li-has-count .ui-btn-inner {
+    padding-right: 67px;
+}
+
+.ui-select .ui-btn-icon-right .ui-icon {
+    right: 15px;
+}
+
+.ui-select .ui-mini.ui-btn-icon-right .ui-icon {
+    right: 7px;
+}
+
+.ui-select .ui-btn-icon-right.ui-li-has-count .ui-li-count {
+    right: 45px;
+}
+
+.ui-select .ui-mini.ui-btn-icon-right.ui-li-has-count .ui-li-count {
+    right: 32px;
+}
+
+label.ui-select {
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 0 0 .3em;
+    display: block;
+}
+
+.ui-select .ui-btn-text, .ui-selectmenu .ui-btn-text {
+    display: block;
+    min-height: 1em;
+    overflow: hidden !important;
+}
+
+.ui-select .ui-btn-text {
+    text-overflow: ellipsis;
+}
+
+.ui-selectmenu {
+    padding: 6px;
+    min-width: 160px;
+}
+
+    .ui-selectmenu .ui-listview {
+        margin: 0;
+    }
+
+    .ui-selectmenu .ui-btn.ui-li-divider {
+        cursor: default;
+    }
+
+.ui-selectmenu-hidden {
+    top: -99999px;
+    left: -9999px;
+}
+
+.ui-screen-hidden, .ui-selectmenu-list .ui-li .ui-icon {
+    display: none;
+}
+
+.ui-selectmenu-list .ui-li .ui-icon {
+    display: block;
+}
+
+.ui-li.ui-selectmenu-placeholder {
+    display: none;
+}
+
+.ui-selectmenu .ui-header {
+    margin: 0;
+    padding: 0;
+}
+
+    .ui-selectmenu .ui-header .ui-title {
+        margin: 0.6em 46px 0.8em;
+    }
+
+@media all and (min-width:450px) {
+    .ui-field-contain label.ui-select {
+        vertical-align: top;
+        display: inline-block;
+        width: 20%;
+        margin: 0 2% 0 0;
+    }
+
+    .ui-field-contain .ui-select {
+        width: 78%;
+        display: inline-block;
+    }
+
+    .ui-hide-label .ui-select {
+        width: 100%;
+    }
+}
+
+.ui-selectmenu .ui-header h1:after {
+    content: '.';
+    visibility: hidden;
+}
+
+label.ui-input-text {
+    font-size: 16px;
+    line-height: 1.4;
+    display: block;
+    font-weight: normal;
+    margin: 0 0 .3em;
+}
+
+input.ui-input-text, textarea.ui-input-text {
+    background-image: none;
+    padding: .4em;
+    margin: .5em 0;
+    line-height: 1.4;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    outline: 0;
+}
+
+    input.ui-input-text.ui-mini, textarea.ui-input-text.ui-mini {
+        margin: .25em 0;
+    }
+
+.ui-field-contain input.ui-input-text, .ui-field-contain textarea.ui-input-text {
+    margin: 0;
+}
+
+input.ui-input-text, textarea.ui-input-text, .ui-input-search {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input.ui-input-text {
+    -webkit-appearance: none;
+}
+
+textarea.ui-input-text {
+    height: 50px;
+    -webkit-transition: height 200ms linear;
+    -moz-transition: height 200ms linear;
+    -o-transition: height 200ms linear;
+    transition: height 200ms linear;
+}
+
+.ui-input-search {
+    padding: 0 30px;
+    margin: .5em 0;
+    background-image: none;
+    position: relative;
+}
+
+    .ui-input-search.ui-mini {
+        margin: .25em 0;
+    }
+
+.ui-field-contain .ui-input-search {
+    margin: 0;
+}
+
+.ui-icon-searchfield:after {
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    margin-top: -9px;
+    content: "";
+    width: 18px;
+    height: 18px;
+    opacity: .5;
+}
+
+.ui-input-search input.ui-input-text {
+    border: none;
+    width: 98%;
+    padding: .4em 0;
+    margin: 0;
+    display: block;
+    background: transparent none;
+    outline: 0 !important;
+}
+
+.ui-input-search .ui-input-clear {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -13px;
+}
+
+.ui-mini .ui-input-clear {
+    right: -3px;
+}
+
+.ui-input-search .ui-input-clear-hidden {
+    display: none;
+}
+
+input.ui-mini, .ui-mini input, textarea.ui-mini {
+    font-size: 14px;
+}
+
+textarea.ui-mini {
+    height: 45px;
+}
+
+@media all and (min-width:450px) {
+    .ui-field-contain label.ui-input-text {
+        vertical-align: top;
+        display: inline-block;
+        width: 20%;
+        margin: 0 2% 0 0;
+    }
+
+    .ui-field-contain input.ui-input-text, .ui-field-contain textarea.ui-input-text, .ui-field-contain .ui-input-search {
+        width: 78%;
+        display: inline-block;
+    }
+
+    .ui-hide-label input.ui-input-text, .ui-hide-label textarea.ui-input-text, .ui-hide-label .ui-input-search {
+        width: 100%;
+    }
+
+    .ui-input-search input.ui-input-text {
+        width: 98%;
+    }
+}
+
+.ui-listview {
+    margin: 0;
+}
+
+ol.ui-listview, ol.ui-listview .ui-li-divider {
+    counter-reset: listnumbering;
+}
+
+.ui-content .ui-listview {
+    margin: -15px;
+}
+
+.ui-collapsible-content > .ui-listview {
+    margin: -10px -15px;
+}
+
+.ui-content .ui-listview-inset {
+    margin: 1em 0;
+}
+
+.ui-collapsible-content .ui-listview-inset {
+    margin: .5em 0;
+}
+
+.ui-listview, .ui-li {
+    list-style: none;
+    padding: 0;
+}
+
+    .ui-li, .ui-li.ui-field-contain {
+        display: block;
+        margin: 0;
+        position: relative;
+        overflow: visible;
+        text-align: left;
+        border-width: 0;
+        border-top-width: 1px;
+    }
+
+        .ui-li.ui-btn {
+            margin: 0;
+        }
+
+        .ui-li .ui-btn-text a.ui-link-inherit {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+.ui-li-static {
+    background-image: none;
+}
+
+.ui-li-divider {
+    padding: .5em 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+ol.ui-listview .ui-link-inherit:before, ol.ui-listview .ui-li-static:before, .ui-li-dec {
+    font-size: .8em;
+    display: inline-block;
+    padding-right: .3em;
+    font-weight: normal;
+    counter-increment: listnumbering;
+    content: counter(listnumbering) ". ";
+}
+
+ol.ui-listview .ui-li-jsnumbering:before {
+    content: "" !important;
+}
+
+.ui-listview-inset .ui-li {
+    border-right-width: 1px;
+    border-left-width: 1px;
+}
+
+.ui-li-last, .ui-li.ui-field-contain.ui-li-last {
+    border-bottom-width: 1px;
+}
+
+.ui-collapsible [class*="ui-body"] > .ui-listview:not(.ui-listview-inset) .ui-li-last {
+    border-bottom-width: 0;
+}
+
+.ui-collapsible-content > .ui-listview:not(.ui-listview-inset) .ui-li:first-child {
+    border-top-width: 0;
+}
+
+.ui-collapsible-content > .ui-listview:not(.ui-listview-inset), .ui-collapsible-content > .ui-listview:not(.ui-listview-inset) .ui-li-last {
+    -webkit-border-bottom-left-radius: inherit;
+    -webkit-border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+    .ui-collapsible-content > .ui-listview:not(.ui-listview-inset) .ui-li-last .ui-li-link-alt {
+        -webkit-border-bottom-right-radius: inherit;
+        border-bottom-right-radius: inherit;
+    }
+
+.ui-li > .ui-btn-inner {
+    display: block;
+    position: relative;
+    padding: 0;
+}
+
+.ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
+    padding: .7em 15px;
+    display: block;
+}
+
+.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-thumb {
+    min-height: 60px;
+    padding-left: 100px;
+}
+
+.ui-li-has-icon .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-icon {
+    min-height: 20px;
+    padding-left: 40px;
+}
+
+.ui-li-has-count .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-count, .ui-li-divider.ui-li-has-count {
+    padding-right: 45px;
+}
+
+.ui-li-has-arrow .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-arrow {
+    padding-right: 40px;
+}
+
+    .ui-li-has-arrow.ui-li-has-count .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-arrow.ui-li-has-count {
+        padding-right: 75px;
+    }
+
+.ui-li-heading {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin: .6em 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ui-li-desc {
+    font-size: 12px;
+    font-weight: normal;
+    display: block;
+    margin: -.5em 0 .6em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ui-li-thumb, .ui-listview .ui-li-icon {
+    position: absolute;
+    left: 1px;
+    top: 0;
+    max-height: 80px;
+    max-width: 80px;
+}
+
+.ui-listview .ui-li-icon {
+    max-height: 16px;
+    max-width: 16px;
+    left: 10px;
+    top: .9em;
+}
+
+.ui-li-thumb, .ui-listview .ui-li-icon, .ui-li-content {
+    float: left;
+    margin-right: 10px;
+}
+
+.ui-li-aside {
+    float: right;
+    width: 50%;
+    text-align: right;
+    margin: .3em 0;
+}
+
+@media all and (min-width:480px) {
+    .ui-li-aside {
+        width: 45%;
+    }
+}
+
+.ui-li-divider {
+    cursor: default;
+}
+
+.ui-li-has-alt .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-alt {
+    padding-right: 53px;
+}
+
+    .ui-li-has-alt.ui-li-has-count .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-alt.ui-li-has-count {
+        padding-right: 88px;
+    }
+
+.ui-li-has-count .ui-li-count {
+    position: absolute;
+    font-size: 11px;
+    font-weight: bold;
+    padding: .2em .5em;
+    top: 50%;
+    margin-top: -.9em;
+    right: 10px;
+}
+
+.ui-li-has-count.ui-li-divider .ui-li-count, .ui-li-has-count .ui-link-inherit .ui-li-count {
+    margin-top: -.95em;
+}
+
+.ui-li-has-arrow.ui-li-has-count .ui-li-count {
+    right: 40px;
+}
+
+.ui-li-has-alt.ui-li-has-count .ui-li-count {
+    right: 53px;
+}
+
+.ui-li-link-alt {
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    border-width: 0;
+    border-left-width: 1px;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+
+    .ui-li-link-alt .ui-btn {
+        overflow: hidden;
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        margin: -13px 0 0 0;
+        border-bottom-width: 1px;
+        z-index: -1;
+    }
+
+    .ui-li-link-alt .ui-btn-inner {
+        padding: 0;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .ui-li-link-alt .ui-btn .ui-icon {
+        right: 50%;
+        margin-right: -9px;
+    }
+
+    .ui-li-link-alt .ui-btn-icon-notext .ui-btn-inner .ui-icon {
+        position: absolute;
+        top: 50%;
+        margin-top: -9px;
+    }
+
+.ui-listview * .ui-btn-inner > .ui-btn > .ui-btn-inner {
+    border-top: 0;
+}
+
+.ui-listview-filter {
+    border-width: 0;
+    overflow: hidden;
+    margin: -15px -15px 15px -15px;
+}
+
+.ui-collapsible-content .ui-listview-filter {
+    margin: -10px -15px 10px -15px;
+    border-bottom: inherit;
+}
+
+.ui-listview-filter-inset {
+    margin: -15px -5px;
+    background: transparent;
+}
+
+.ui-collapsible-content .ui-listview-filter-inset {
+    margin: -5px;
+    border-bottom-width: 0;
+}
+
+.ui-listview-filter .ui-input-search {
+    margin: 5px;
+    width: auto;
+    display: block;
+}
+
+.ui-li.ui-screen-hidden {
+    display: none;
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+    .ui-li .ui-btn-text {
+        overflow: visible;
+    }
+}
+
+label.ui-slider {
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 0 0 .3em;
+    display: block;
+}
+
+input.ui-slider-input, .ui-field-contain input.ui-slider-input {
+    display: inline-block;
+    width: 50px;
+    background-image: none;
+    padding: .4em;
+    margin: .5em 0;
+    line-height: 1.4;
+    font-size: 16px;
+    outline: 0;
+}
+
+    input.ui-slider-input.ui-mini, .ui-field-contain input.ui-slider-input.ui-mini {
+        width: 45px;
+        margin: .25em 0;
+        font-size: 14px;
+    }
+
+.ui-field-contain input.ui-slider-input {
+    margin: 0;
+}
+
+input.ui-slider-input, .ui-field-contain input.ui-slider-input {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.ui-slider-input::-webkit-outer-spin-button {
+    margin: 0;
+}
+
+select.ui-slider-switch {
+    display: none;
+}
+
+div.ui-slider {
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+    height: 15px;
+    padding: 0;
+    margin: 0 2% 0 20px;
+    top: 4px;
+    width: 65%;
+}
+
+div.ui-slider-mini {
+    height: 12px;
+    margin-left: 10px;
+    top: 2px;
+}
+
+div.ui-slider-bg {
+    border: none;
+    height: 100%;
+    padding-right: 8px;
+}
+
+.ui-controlgroup a.ui-slider-handle, a.ui-btn.ui-slider-handle {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    width: 28px;
+    height: 28px;
+    margin: -15px 0 0 -15px;
+    outline: 0;
+}
+
+    a.ui-btn.ui-slider-handle .ui-btn-inner {
+        padding: 0;
+        height: 100%;
+    }
+
+div.ui-slider-mini a.ui-slider-handle {
+    height: 14px;
+    width: 14px;
+    margin: -8px 0 0 -7px;
+}
+
+    div.ui-slider-mini a.ui-slider-handle .ui-btn-inner {
+        height: 30px;
+        width: 30px;
+        padding: 0;
+        margin: -9px 0 0 -9px;
+        border-top: none;
+    }
+
+@media all and (min-width:450px) {
+    .ui-field-contain label.ui-slider {
+        vertical-align: top;
+        display: inline-block;
+        width: 20%;
+        margin: 0 2% 0 0;
+    }
+
+    .ui-field-contain div.ui-slider {
+        width: 43%;
+    }
+
+    .ui-field-contain div.ui-slider-switch {
+        width: 5.5em;
+    }
+}
+
+div.ui-slider-switch {
+    height: 32px;
+    margin-left: 0;
+    width: 5.8em;
+}
+
+a.ui-slider-handle-snapping {
+    -webkit-transition: left 70ms linear;
+    -moz-transition: left 70ms linear;
+}
+
+div.ui-slider-switch .ui-slider-handle {
+    margin: 1px 0 0 -15px;
+}
+
+.ui-slider-inneroffset {
+    margin: 0 16px;
+    position: relative;
+    z-index: 1;
+}
+
+div.ui-slider-switch.ui-slider-mini {
+    width: 5em;
+    height: 29px;
+}
+
+    div.ui-slider-switch.ui-slider-mini .ui-slider-inneroffset {
+        margin: 0 15px 0 14px;
+    }
+
+    div.ui-slider-switch.ui-slider-mini .ui-slider-handle {
+        width: 25px;
+        height: 25px;
+        margin: 1px 0 0 -13px;
+    }
+
+    div.ui-slider-switch.ui-slider-mini a.ui-slider-handle .ui-btn-inner {
+        height: 30px;
+        width: 30px;
+        padding: 0;
+        margin: 0;
+    }
+
+span.ui-slider-label {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    font-size: 16px;
+    top: 0;
+    line-height: 2;
+    min-height: 100%;
+    border-width: 0;
+    white-space: nowrap;
+}
+
+.ui-slider-mini span.ui-slider-label {
+    font-size: 14px;
+}
+
+span.ui-slider-label-a {
+    z-index: 1;
+    left: 0;
+    text-indent: -1.5em;
+}
+
+span.ui-slider-label-b {
+    z-index: 0;
+    right: 0;
+    text-indent: 1.5em;
+}
+
+.ui-slider-inline {
+    width: 120px;
+    display: inline-block;
+}
+
+
+/* Cars-Basic1.css */
+/* CSS Document version 1 */
+
+select {
+    font-size: 50px;
+}
+
+body {
+    font-family: Helvetica, Arial, Tahoma, sans-serif;
+    color: #333;
+    font-size: 14px;
+}
+
+html, body, html body {
+    height: 100%;
+}
+
+h1, h2 a.ui-link, h2 {
+    border: none 0;
+    color: #7B2787;
+    font: normal 21px Arial, Helvetica, Tahoma, sans-serif;
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+.beta-header {
+    color: #93A445;
+    font-size: .6em;
+    font-weight: bold;
+}
+
+h1, h2 a.ui-link, h2 {
+    border: none 0;
+    color: #7B2787;
+    font: normal 21px Arial,Helvetica,Tahoma,sans-serif;
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+/* sticky footer */
+[data-role=page] {
+    height: 100% !important;
+}
+
+h3 {
+    color: #333;
+    font-size: 14px;
+    margin: 20px auto 5px auto;
+}
+
+    h3.repair-care-sub-heading {
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+
+.inlineBlock {
+    display: inline-block;
+}
+
+.inner-label {
+    background: rgba(255,255,255,0.9);
+    border: 1px solid #aaa;
+    padding: 3px 0px;
+    margin: 65px auto;
+    width: 124px;
+    text-align: center;
+    border-radius: 5px;
+    color: #666;
+}
+
+h3.secondary {
+    background-color: #EDF1F4;
+    background-size: 16px;
+    padding: 8px 15px;
+    font-weight: bold;
+    color: #3a4951;
+    margin: auto -15px;
+}
+
+.lazy {
+    display: none;
+}
+
+#carslogo {
+    width: 120px;
+    height: 50px;
+}
+
+div[data-role="page"] {
+    background: #fff;
+}
+
+#loadingMessage {
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    opacity: 1.0;
+    background-color: transparent;
+    position: fixed;
+}
+
+    #loadingMessage div {
+        opacity: 1;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -25px 0 0 -25px;
+        background: white;
+        padding: 10px;
+        border-radius: 35px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #loadingMessage.withlabel div {
+        width: 150px;
+        height: 85px;
+        margin: -25px 0 0 -75px;
+        background: white;
+        padding: 15px 10px 10px 10px;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    #loadingMessage.withlabel .message-label {
+        box-shadow: 0 0;
+        height: 20px;
+        border-radius: 0;
+        border: 0;
+        background: transparent;
+        width: 150px;
+        margin: 10px 0 0 -85px;
+    }
+
+.especialcenteralign {
+    text-align: center;
+}
+
+.ui-link {
+    color: #098ae4;
+    font-weight: bold;
+}
+
+p {
+    line-height: 20px;
+}
+
+.price-mileage span {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.tab-content ul, .datalist, .expert-review-content ul {
+    padding: 0px 0px 0px 0px;
+    list-style-position: outside;
+    margin: 20px 10px 20px 16px;
+}
+
+    .tab-content ul li {
+        padding: 2px 0px;
+    }
+
+ul .datalist li {
+    border: 0px;
+    list-style: disc;
+    margin: 0 0 0 0px;
+}
+
+ul .datalist, ul.sub-links p {
+    font-size: 14px;
+    text-shadow: none;
+    color: #333;
+    font-weight: normal;
+    padding: 0 20px;
+}
+
+ul.sub-links h4 {
+    text-shadow: none;
+    color: #333;
+    padding: 0 20px;
+}
+
+.ui-li-desc {
+    font-size: 14px;
+    text-overflow: no;
+    white-space: normal;
+}
+
+.middle-align-text {
+    float: left;
+    padding: 7px 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #098ae4;
+}
+
+    a.fullsize {
+        padding: 5px 10px 0px 45px;
+        display: block;
+        margin: -10px;
+        line-height: 30px;
+        background: url(https://m.cars.com/assets/images/car.png) no-repeat 10px center;
+    }
+
+    a.dealer {
+        background: url(https://m.cars.com/assets/images/dealer.png) no-repeat 10px center;
+    }
+
+    a.logo {
+        background: none;
+        float: left;
+        height: 55px;
+        width: 110px;
+    }
+
+.marginTopNone {
+    margin-top: 0px;
+}
+
+.marginBottomNone, .consumer-reviews-widget h3 {
+    margin-bottom: 0px;
+}
+
+.consumer-reviews-widget p {
+    margin-top: 10px;
+}
+
+.consumer-reviews-widget .ui-link {
+    font-weight: normal;
+}
+
+#carcondition {
+    background: url(https://m.cars.com/assets/images/btn1.png) no-repeat 0px 0px;
+    padding: 0px 0px;
+    width: 302px;
+    margin: 0px auto;
+    height: 36px;
+}
+
+    #carcondition .carcondition1 {
+        display: block;
+        float: left;
+        padding: 15px 0px;
+        width: 100px;
+    }
+
+    #carcondition .carcondition2 {
+        display: block;
+        float: left;
+        padding: 15px 0px;
+        width: 96px;
+    }
+
+    #carcondition .carcondition3 {
+        display: block;
+        float: left;
+        padding: 15px 0px;
+        width: 100px;
+    }
+
+/* VDP vehicle Tab Styles*/
+.vehstand-show-more, .vehopt-show-more, .disclaimer-show-more {
+    background: url(https://m.cars.com/assets/images/sprites_new.png) no-repeat right -587px transparent;
+    padding-right: 12px;
+}
+
+.vehstand-show-less, .vehopt-show-less {
+    display: none;
+}
+
+    .show-less, .vehstand-show-less, .vehopt-show-less .disclaimer-show-less {
+        background: url(https://m.cars.com/assets/images/sprites_new.png) no-repeat right -686px transparent;
+        padding-right: 12px;
+    }
+
+.dealer-location-map {
+    width: 290px;
+    height: 290px;
+    border: #e1e1e1 solid 1px;
+}
+
+.getDirections .ui-btn-text {
+    color: #5C707C;
+    padding-left: 20px;
+    background: url(https://m.cars.com/assets/images/directionspin.png) no-repeat 0 center;
+    background-size: 12px auto;
+}
+
+.map-preview {
+    background: url(https://m.cars.com/assets/images/map-preview.gif) center no-repeat;
+    overflow: hidden;
+    height: 100px;
+    position: relative;
+}
+
+.map-preview-container {
+    margin: 25px 0 15px 0;
+}
+
+.positionAbsolute {
+    position: absolute;
+}
+
+.offscreen {
+    top: 0;
+    left: 110%;
+}
+
+.map-wrapper {
+    margin: 25px 0 15px 0;
+    display: none;
+}
+
+.show-more-cars, .show-more-searches {
+    background-color: #F7F6F7;
+    display: block;
+    padding: 8px;
+    text-align: center;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+    .show-more-cars:active, .show-more-searches:active {
+        background-color: #EEF1F3;
+    }
+
+/*End of vehicle Tab Styles*/
+
+.carfax-icon {
+    background: url(https://m.cars.com/assets/images/sprites_new.png) no-repeat -418px -744px transparent;
+    padding-left: 15px;
+}
+
+.ui-li-heading, ul li h3 {
+    white-space: normal;
+    font-size: 16px;
+    margin: 10px 0 0 0;
+}
+
+.ui-btn.ui-submit:active {
+    background: #7c8d28;
+    border: 1px solid #7c8d28;
+}
+
+.ui-btn-inner {
+    white-space: normal;
+    padding: 0.6em 0px;
+    text-overflow: no !important;
+    overflow: visible;
+}
+
+ul {
+    -moz-border-radius: 5px /*{global-radii-blocks}*/;
+    -webkit-border-radius: 5px /*{global-radii-blocks}*/;
+    border-radius: 5px /*{global-radii-blocks}*/;
+}
+
+.ui-select {
+    margin-right: 3px;
+}
+
+li.listdivider .ui-select {
+    margin-right: 23px;
+}
+
+.ui-select .ui-btn {
+    background: url("https://m.cars.com/assets/images/sprites_new.png") no-repeat right -520px #fff !important;
+    border: 1px solid #ccc;
+    margin: 0px 0px 10px 0px;
+    -moz-box-shadow: inset 0px 1px 4px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: inset 0px 1px 4px rgba(0, 0, 0, .2);
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, .2);
+    text-align: left;
+    color: #333;
+    text-shadow: none;
+}
+
+.ui-select .ui-btn-inner {
+    padding: 4px 5px 5px 5px;
+    font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.result.ui-body-a, .result.ui-overlay-a {
+    background-color: #EEF1F3;
+    font-weight: bold;
+    -moz-box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+input[type=email], input[type=number], input[type=tel], input[type=text], input[type=password], textarea.ui-input-text, textarea {
+    font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px /*{global-radii-blocks}*/;
+    -webkit-border-radius: 5px /*{global-radii-blocks}*/;
+    border-radius: 5px /*{global-radii-blocks}*/;
+    -moz-box-shadow: inset 0px 1px 4px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: inset 0px 1px 4px rgba(0, 0, 0, .2);
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, .2);
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    padding: 7px 10px 8px 10px;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.listdivider .ui-select {
+    max-width: 100%;
+}
+
+.ui-grid-a {
+    margin: 0px;
+    width: 100%;
+}
+
+    .ui-grid-a .ui-btn {
+        margin: 0.5em 10px 0.5em 0px;
+    }
+
+.ui-block-b input {
+    width: 75%;
+    float: right;
+}
+
+.chromebg { /*background: url("http://m.cars.com/mcs/projects/cars/images/grayBG.png") no-repeat;*/
+    border-radius: 5px;
+}
+
+#inventorysearch-form .ui-block-b {
+    margin-top: 0px;
+}
+
+    #inventorysearch-form .ui-block-b span {
+        line-height: 30px;
+    }
+
+.advertisement {
+    margin: 0px auto 20px auto;
+    text-align: center;
+    width: 320px; /*height: 55px;*/
+}
+
+@media screen and (max-width: 320px) {
+    .advertisement {
+        margin-left: -15px;
+    }
+}
+
+.module { /*padding:10px 10px 15px 10px;*/
+    /*border:1px solid #e1e1e1;*/
+}
+
+.module { /*padding:10px 10px 15px 10px;*/
+    /*border:1px solid #e1e1e1;*/
+}
+
+.ui-header {
+    height: 34px;
+    border: 0px;
+    margin-bottom: 24px;
+    background-image: linear-gradient(left, rgb(119,40,128)0%, rgb(39,3,92) 100%);
+    background-image: -o-linear-gradient(left, rgb(119,40,128) 0%, rgb(39,3,92) 100%);
+    background-image: -moz-linear-gradient(left, rgb(119,40,128) 0%, rgb(39,3,92) 100%);
+    background-image: -webkit-linear-gradient(left, rgb(119,40,128) 0%, rgb(39,3,92) 100%);
+    background-image: -ms-linear-gradient(left, rgb(119,40,128) 0%, rgb(39,3,92) 100%);
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, rgb(119,40,128)), color-stop(1, rgb(39,3,92)) );
+}
+
+.number-right [type="number"], .textright {
+    text-align: right;
+}
+
+.ui-header .ui-title {
+    background: url(https://m.cars.com/assets/images/logo.png) 10px 7px no-repeat transparent /*{a-bar-background-color}*/;
+    margin: 0px;
+    border: 0px;
+    height: 58px;
+}
+
+.number-right [type="number"], .textright {
+    text-align: right;
+}
+
+.collapsible-content.ui-li .ui-btn-inner a.ui-link-inherit, .collapsible-content.ui-li-static.ui-li {
+    padding: 0px;
+}
+
+.collapsible-content .ui-collapsible-set {
+    margin: 0 0 -6px 0;
+}
+
+    .collapsible-content .ui-collapsible-set .ui-collapsible .ui-collapsible-heading a {
+        border-color: #fff;
+        font-size: 14px;
+        padding: 0px 0px 2px 0px;
+        margin-top: 1px;
+        margin-right: 10px; /*background: url("https://m.cars.com/assets//images/rebrand_sprites.png") no-repeat scroll right -491px transparent;*/
+    }
+
+    .collapsible-content .ui-collapsible-set .ui-collapsible-collapsed .ui-collapsible-heading a {
+        border-radius: 0px;
+        margin-top: 0px;
+        padding: 1px 0px 2px 0px;
+        margin-right: 10px; /*background: url("https://m.cars.com/assets//images/rebrand_sprites.png") no-repeat scroll right -356px transparent;*/
+    }
+
+.filter-record {
+    padding: 0px 0 5px 0;
+}
+
+    .filter-record h3.secondary {
+        margin-bottom: -4px;
+        padding: 8px 0px;
+    }
+
+    .filter-record .ui-collapsible-heading-collapsed {
+        border-bottom: 1px solid #e1e1e1;
+    }
+
+    .filter-record .ui-collapsible-content {
+        margin: 10px 0 -4px 0;
+    }
+
+    .filter-record .ui-checkbox .ui-btn-inner .ui-icon {
+        background: transparent;
+    }
+
+    .filter-record .ui-checkbox .ui-btn-text, .filter-record .ui-checkbox .entirerow .ui-btn-text {
+        text-shadow: none;
+        color: #333;
+        font-weight: normal;
+        font-size: 16px;
+        background: transparent;
+        color: #999;
+    }
+
+    .filter-record .ui-checkbox .ui-checkbox-on .ui-btn-text, .filter-record .ui-checkbox .entirerow .ui-checkbox-on .ui-btn-text {
+        color: #333;
+    }
+
+.ui-collapsible .ui-btn-icon-left .ui-btn-inner .ui-icon, .ui-collapsible .ui-btn-icon-right .ui-btn-inner .ui-icon {
+    background-position: right -498px;
+}
+
+.ui-collapsible-collapsed .ui-btn-icon-left .ui-btn-inner .ui-icon, .ui-collapsible-collapsed .ui-btn-icon-right .ui-btn-inner .ui-icon {
+    background-position: right -365px;
+}
+
+.collapsible-content .ui-collapsible-heading .ui-btn-inner, .collapsible-content .ui-collapsible-heading .ui-btn-icon-left .ui-btn-inner {
+    text-shadow: 0px 0px 0px #fff;
+    color: #098ae4;
+    padding-left: 20px;
+}
+
+.collapsible-content .ui-btn-text span {
+    text-shadow: 0px 0px 0px #fff;
+    color: #999;
+    font-weight: normal;
+}
+
+.collapsible-content ul {
+    margin: 0px 0px 0px -40px;
+}
+
+.ui-collapsible-content {
+    padding: 0px;
+    margin: -10px 0px 0px 0px;
+}
+
+.collapsible-content ul li {
+    display: block;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 10px 0px 6px 17px;
+}
+
+    .collapsible-content ul li .ui-checkbox, .collapsible-content ul li .ui-radio {
+        display: inline-block;
+        height: 34px;
+    }
+
+    .collapsible-content ul li span {
+        margin-left: 10px;
+    }
+
+#writeReviewLink .write-review-link a,
+.load-more-results a,
+.preview-review a,
+.edit-review a {
+    background-color: #efefef;
+    display: block;
+    padding: 10px 5px;
+    text-align: center;
+    -moz-border-radius: 5px /*{global-radii-blocks}*/;
+    -webkit-border-radius: 5px /*{global-radii-blocks}*/;
+    border-radius: 5px /*{global-radii-blocks}*/;
+}
+
+.arrow-right {
+    position: relative;
+}
+
+    .arrow-right::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -10px;
+        width: 16px;
+        height: 20px;
+        background: url(https://m.cars.com/assets/images/rebrand_sprites.png) no-repeat right -364px transparent;
+        display: block;
+    }
+
+.vehicle-photo {
+    width: 100%;
+}
+
+.stockphoto {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+
+#vdp .trim-item h3 {
+    color: #098ae4;
+}
+
+#vdp .trim-item {
+    padding-right: 30px;
+}
+
+.vehicle-record img[data-paid] {
+    cursor: pointer;
+}
+
+#vehiclerecord-list li div.right {
+    margin-left: 120px;
+}
+
+.text-dealer-notice {
+    width: 40%;
+}
+
+.rightColumn {
+    float: left;
+    margin-left: 16px !important;
+}
+
+#vehiclerecord-list li div.left {
+    width: 100px;
+    float: left;
+}
+
+#vehiclerecord-list li .phone-number {
+    padding: 5px 0;
+}
+
+#vehiclerecord-list li div.left .compare-btn {
+    width: 100px;
+    display: block;
+    text-align: center;
+    padding: 7px 0px;
+}
+
+/* Tabs */
+.ui-navbar, .ui-navbar.ui-mini {
+    /*background: url("https://m.cars.com/assets/images/tab-bottom.png") repeat-x 0 bottom transparent;*/
+    border-bottom: 1px solid #e1e1e1;
+    height: 55px;
+    margin: auto -15px;
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+    .ui-navbar .ui-btn {
+        background: url("https://m.cars.com/assets/images/tabs.png") no-repeat 0 -148px transparent;
+        height: 55px;
+        border: 0px;
+    }
+
+    .ui-navbar .ui-btn-active .ui-btn-inner {
+        background: url("https://m.cars.com/assets/images/tabs.png") no-repeat right -74px transparent;
+        border-right: 5px solid #fff;
+        line-height: 30px;
+        font-size: 14px;
+        color: #5C707C;
+        padding-top: 0.9em !important;
+        /*padding-bottom:0.6em !important;*/
+        height: 39px;
+    }
+
+    .ui-navbar .ui-btn-up-a, .ui-navbar .ui-btn-hover-a, .ui-navbar .ui-btn-down-a, .ui-navbar .ui-btn-active-a {
+        text-shadow: none;
+    }
+
+
+.ui-mini .ui-btn-inner {
+    padding: 0px;
+}
+
+.ui-navbar .ui-btn .ui-btn-inner {
+    background: url("https://m.cars.com/assets/images/tabs.png") no-repeat right -222px transparent;
+    border-right: 5px solid #fff;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+    height: 42px;
+}
+
+.ui-navbar .ui-btn-active {
+    background: url("https://m.cars.com/assets/images/tabs.png") no-repeat 0 0px transparent;
+    height: 55px;
+}
+
+    .ui-navbar .ui-btn-active .ui-btn-inner {
+        background: url("https://m.cars.com/assets/images/tabs.png") no-repeat right -74px transparent;
+        border-right: 5px solid #fff;
+        line-height: 30px;
+        font-size: 14px;
+        color: #5C707C;
+        padding-top: 0.9em !important;
+        /*padding-bottom:0.6em !important;*/
+        height: 39px;
+    }
+
+.ui-navbar .ui-btn-up-a, .ui-navbar .ui-btn-hover-a, .ui-navbar .ui-btn-down-a, .ui-navbar .ui-btn-active-a {
+    text-shadow: none;
+}
+
+.ui-navbar li .multiline .ui-btn-inner {
+    line-height: 16px;
+    padding-top: 0.9em; /*padding-bottom:0.4em;*/
+}
+
+/* Vehicle Tab CSS Code */
+.ui-navbar .ui-grid-b .ui-block-a {
+    width: 27%;
+}
+
+/* Dealer Tab CSS Code */
+.ui-navbar .ui-grid-b .ui-block-b {
+    width: 35%;
+}
+
+/* Research Tab CSS Code */
+.ui-navbar .ui-grid-b .ui-block-c {
+    width: 38%;
+}
+
+/* Tabs */
+
+.email-phone .ui-block-a {
+    width: 49%;
+}
+
+.email-phone .ui-block-b {
+    width: 51%;
+}
+
+    .email-phone .ui-block-b .ui-btn {
+        margin-right: 0px;
+    }
+
+.sticky {
+    background: #fff;
+    margin-top: 0px; /* setting the initial position of the sticky element. */
+    position: relative; /* setting position relative to so element scrolls normally */
+}
+
+.float {
+    position: fixed; /* setting the position to fixed so the content stays at its location */
+    width: 95%;
+    top: 0px; /* some padding for the sticky element so it doesnt touch the top of the browser window. */
+    z-index: 100;
+    padding: 0 15px;
+    margin: 0 -15px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .2);
+    -webkit-transition: box-shadow 0.25s linear;
+    -moz-transition: box-shadow 0.25s linear;
+    -ms-transition: box-shadow 0.25s linear;
+    -o-transition: box-shadow 0.25s linear;
+    transition: box-shadow 0.25s linear;
+}
+
+/* UI-THEME-A */
+/*********************************************************************
+ * DONT BLOW AWAY THIS SECTION, OR THE ESTIMATOR GOES ORANGE!        *
+ * IF YOU NEED TO CHANGE IT: please talk to someone on the service   *
+ *      and repair team first!  Thanks!                              *
+ *********************************************************************/
+.ui-btn-up-a, .ui-btn-hover-a, .ui-btn-down-a, .ui-btn-active-a {
+    margin: 0px 0px 0px 0px;
+    border-top: 2px solid #e1e1e1;
+    width: 100%;
+    font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+/*********************************************************************
+ * END DONT BLOW AWAY THIS SECTION, OR THE ESTIMATOR GOES ORANGE! ****
+ *********************************************************************/
+
+
+ul .ui-btn-up-a, ul .ui-btn-hover-a, ul .ui-btn-down-a, ul.ui-btn-active-a {
+    background: none;
+    border: 0px;
+    -moz-box-shadow: 0px 0px 0px #ffffff;
+    -webkit-box-shadow: 0px 0px 0px #ffffff;
+    box-shadow: 0px 0px 0px #ffffff;
+    width: 100%;
+    border-radius: 0px;
+    font-size: 14px;
+}
+
+
+    ul .ui-btn-up-a .ui-btn-inner a, ul .ui-btn-down-a .ui-btn-inner a, ul .ui-btn-hover-a .ui-btn-inner a {
+        color: #098ae4;
+        text-shadow: none;
+        text-decoration: none;
+    }
+
+li.has-arrow .ui-btn-up-a .ui-icon, li.has-arrow .ui-btn-hover-a .ui-icon {
+    background: url(https://m.cars.com/assets/images/rebrand_sprites.png) repeat-x right -365px transparent;
+}
+
+/* UI-THEME-B */
+.ui-btn-up-b, .ui-btn-hover-b, .ui-btn-down-b, .ui-btn-active-b {
+    background: #e6e6e6 /*{a-bup-background-color}*/;
+    font-weight: bold;
+    color: #333333 /*{a-bup-color}*/;
+    text-decoration: none;
+    text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 1px /*{a-bup-shadow-radius}*/ #eeeeee /*{a-bup-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #FFFFFF /*{a-bup-background-start}*/ ), to( #DCDCDC /*{a-bup-background-end}*/ )); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient( #FFFFFF /*{a-bup-background-start}*/, #DCDCDC /*{a-bup-background-end}*/ ); /* Chrome 10+, Saf5.1+ */
+    background-image: -moz-linear-gradient( #FFFFFF /*{a-bup-background-start}*/, #DCDCDC /*{a-bup-background-end}*/ ); /* FF3.6 */
+    background-image: -ms-linear-gradient( #FFFFFF /*{a-bup-background-start}*/, #DCDCDC /*{a-bup-background-end}*/ ); /* IE10 */
+    background-image: -o-linear-gradient( #FFFFFF /*{a-bup-background-start}*/, #DCDCDC /*{a-bup-background-end}*/ ); /* Opera 11.10+ */
+    background-image: linear-gradient( #FFFFFF /*{a-bup-background-start}*/, #DCDCDC /*{a-bup-background-end}*/ );
+    -webkit-border-radius: 5px /*{global-radii-blocks}*/;
+    border-radius: 5px /*{global-radii-blocks}*/;
+    border: 1px solid #e1e1e1;
+}
+
+.chromebg ul {
+    border: 1px solid #e1e1e1;
+    border-bottom: 0px;
+    border-radius: 5px;
+}
+
+ul .ui-btn-up-b, ul .ui-btn-hover-b, ul .ui-btn-down-b, ul.ui-btn-active-b {
+    background: none;
+    -moz-box-shadow: 0px 0px 0px #ffffff;
+    -webkit-box-shadow: 0px 0px 0px #ffffff;
+    box-shadow: 0px 0px 0px #ffffff;
+    width: 100%;
+}
+
+    ul .ui-btn-up-b .ui-btn-inner a, ul .ui-btn-down-b .ui-btn-inner a, ul .ui-btn-hover-b .ui-btn-inner a {
+        color: #098ae4;
+        text-shadow: none;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    ul .ui-btn-up-b .ui-icon, ul .ui-btn-down-b .ui-icon, ul .ui-btn-hover-b .ui-icon, ul .ui-btn-active-b .ui-icon {
+        background: none;
+    }
+
+/* UI-THEME-C */
+.ui-btn-up-c, .ui-btn-hover-c, .ui-btn-down-c, .ui-btn-active-c {
+    border: 1px solid #e1e1e1 /*{a-bup-border}*/;
+    background: #e6e6e6 /*{a-bup-background-color}*/;
+    font-weight: bold;
+    color: #333333 /*{a-bup-color}*/;
+    text-decoration: none;
+    text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 1px /*{a-bup-shadow-radius}*/ #eeeeee /*{a-bup-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #FFFFFF /*{a-bup-background-start}*/ ), to( #DCDCDC /*{a-bup-background-end}*/ )); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient( #FFFFFF /*{a-bup-background-start}*/, #DCDCDC /*{a-bup-background-end}*/ ); /* Chrome 10+, Saf5.1+ */
+    background-image: -moz-linear-gradient( #FFFFFF /*{a-bup-background-start}*/, #DCDCDC /*{a-bup-background-end}*/ ); /* FF3.6 */
+    background-image: -ms-linear-gradient( #FFFFFF /*{a-bup-background-start}*/, #DCDCDC /*{a-bup-background-end}*/ ); /* IE10 */
+    background-image: -o-linear-gradient( #FFFFFF /*{a-bup-background-start}*/, #DCDCDC /*{a-bup-background-end}*/ ); /* Opera 11.10+ */
+    background-image: linear-gradient( #FFFFFF /*{a-bup-background-start}*/, #DCDCDC /*{a-bup-background-end}*/ );
+    -moz-border-radius: 3px /*{global-radii-blocks}*/;
+    -webkit-border-radius: 3px /*{global-radii-blocks}*/;
+    border-radius: 3px /*{global-radii-blocks}*/;
+}
+
+    .ui-btn-up-c .ui-btn-inner, .ui-btn-hover-c .ui-btn-inner, .ui-btn-down-c .ui-btn-inner, .ui-btn-active-c .ui-btn-inner {
+        padding: 5px;
+        font-size: 11px;
+        font-weight: normal;
+    }
+
+/*  UI Theme D */
+.ui-listview-inset .listdivider.ui-li {
+    padding: 15px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
+    padding: 0.7em 15px;
+}
+
+.ui-listview-inset .listdivider.ui-li-last {
+    border: 0px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.listdivider .ui-btn-inner {
+    min-width: 60px;
+}
+
+.ui-listview .saved, .ui-listview .msrp, .ui-listview .estimate, .saved-content-listing .saved {
+    color: #999;
+}
+
+strong .msrp {
+    font-weight: normal;
+}
+
+.ui-listview .sellerName {
+    color: #666;
+}
+
+.smaller {
+    font-size: .85em;
+}
+
+.larger {
+    font-size: 1.2em;
+}
+
+.ui-listview .mileAway {
+    color: #666;
+    display: inline-block;
+}
+
+/*.listdivider .ui-btn-block {
+    display:inline-block;
+}*/
+
+.listdivider .ui-block-b {
+    text-align: right;
+}
+
+.listdivider.footer {
+    border-radius: 0px 0px 5px 5px;
+    height: 27px;
+    border-top: 1px solid #e1e1e1;
+}
+
+ui-btn-up-d, .ui-btn-hover-d, .ui-btn-down-d, .ui-btn-active-d {
+    border: 1px solid #e1e1e1 /*{a-bup-border}*/;
+    background: #ffffff /*{a-bup-background-color}*/;
+    color: #333333 /*{a-bup-color}*/;
+    text-decoration: none;
+    text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 1px /*{a-bup-shadow-radius}*/ #eeeeee /*{a-bup-shadow-color}*/;
+    background-image: none;
+    -moz-border-radius: 3px /*{global-radii-blocks}*/;
+    -webkit-border-radius: 3px /*{global-radii-blocks}*/;
+    border-radius: 3px /*{global-radii-blocks}*/;
+}
+
+li .ui-grid-a div.ui-btn {
+    border: 1px solid #e1e1e1 /*{a-bup-border}*/;
+    background: #ffffff /*{a-bup-background-color}*/;
+    -moz-border-radius: 3px /*{global-radii-blocks}*/;
+    -webkit-border-radius: 3px /*{global-radii-blocks}*/;
+    border-radius: 3px /*{global-radii-blocks}*/;
+}
+
+.ui-btn-up-d .ui-btn-inner, .ui-btn-hover-d .ui-btn-inner, .ui-btn-down-d .ui-btn-inner, .ui-btn-active-d .ui-btn-inner {
+    font-size: 16px; /*font-weight:bold;*/
+}
+
+ul .ui-bar-d {
+    background: url(https://m.cars.com/assets/images/rebrand_sprites.png) repeat-x 0px -110px #fefefe /*{a-bar-background-color}*/;
+    padding: 0px 10px;
+    line-height: 46px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px 5px 0px 0px;
+}
+
+ul .ui-corner-bottom {
+    border-radius: 0px 0px 5px 5px;
+}
+
+ul .ui-btn-up-d, {
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #ffffff /*{b-bup-background-start}*/ ), to( #ffffff /*{b-bup-background-end}*/ )); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient( #ffffff /*{b-bup-background-start}*/, #ffffff /*{b-bup-background-end}*/ ); /* Chrome 10+, Saf5.1+ */
+    background-image: -moz-linear-gradient( #ffffff /*{b-bup-background-start}*/, #ffffff /*{b-bup-background-end}*/ ); /* FF3.6 */
+    background-image: -ms-linear-gradient( #ffffff /*{b-bup-background-start}*/, #ffffff /*{b-bup-background-end}*/ ); /* IE10 */
+    background-image: -o-linear-gradient( #ffffff /*{b-bup-background-start}*/, #ffffff /*{b-bup-background-end}*/ ); /* Opera 11.10+ */
+    background-image: linear-gradient( #ffffff /*{b-bup-background-start}*/, #ffffff /*{b-bup-background-end}*/ );
+    text-shadow: 0 1px 1px #FFFFFF;
+    box-shadow: 0px 0px 0px #FFFFFF;
+    font-size: 14px;
+    padding: 5px 0px 5px 100px;
+}
+
+    ul .ui-btn-up-d .ui-btn-inner {
+        padding: 7px 0.7em;
+    }
+
+    /*ul .ui-body-d .ui-btn{
+	margin: 0;
+}*/
+    ul .ui-btn-up-d .ui-btn {
+        margin: 0;
+        display: inline-block;
+        font-weight: bold;
+    }
+
+li .ui-grid-a .ui-btn-text {
+    font-size: 16px;
+}
+
+ul .ui-btn-up-d .img-container {
+    float: left;
+    margin: 0 0.7em 5px 0;
+    overflow: hidden;
+    text-align: center;
+    width: 100px;
+}
+
+    ul .ui-btn-up-d .img-container img {
+        border: none;
+        margin: auto;
+        max-height: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+
+        /*This prevents the loader animation to be adjusted to fulfill the container*/
+        ul .ui-btn-up-d .img-container img[src="https://m.cars.com/assets/images/loading_small.gif"] {
+            height: auto !important;
+            width: auto !important;
+            max-width: auto !important;
+            max-height: auto !important;
+        }
+
+ul .ui-btn-up-d h3 {
+    margin: 0px 0px 6px 0px;
+}
+
+ul .ui-btn-up-d p {
+    margin: 0px;
+    line-height: 18px;
+}
+
+ul .ui-btn-up-d .ui-btn-inner a {
+    color: #098ae4;
+    text-align: center;
+}
+
+ul .ui-body-c .ui-icon {
+    display: none;
+}
+
+.ui-listview {
+    border: 0px;
+    border-bottom: 0px;
+    margin: 0px -15px 15px !important;
+}
+
+    .ui-listview li {
+        border-bottom: 1px solid #e1e1e1;
+    }
+
+    .ui-listview li {
+        border-radius: 0px;
+    }
+
+.no-bottom-border {
+    border-bottom: 0px;
+}
+
+.ui-listview li.ui-li-last {
+    -moz-border-radius: 3px /*{global-radii-blocks}*/;
+    -webkit-border-radius: 3px /*{global-radii-blocks}*/;
+    border-radius: 3px /*{global-radii-blocks}*/;
+}
+
+.entirerow {
+    border: none;
+    height: 29px;
+    padding-top: 3px;
+    width: 100%;
+}
+
+.listdivider {
+    background: url(https://m.cars.com/assets/images/rebrand_sprites.png) repeat-x 0px -110px #FEFEFE /*{a-bar-background-color}*/;
+    height: 28px;
+    border-radius: 5px 5px 0px 0px;
+    background: none;
+}
+
+.entirerow .ui-btn-text {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.listdivider.ui-corner-bottom {
+    border-top: 0px;
+}
+
+.bottom-toolbar {
+    clear: both;
+    padding: 10px 0;
+}
+
+/*Compare Tray*/
+.ui-page-footer-fullscreen .ui-content {
+    padding: 35px 15px 15px 15px !important;
+}
+
+/*div#compare-tray { background:rgba(83,35,128,0.9); padding:1.5% 5% 0 5%; width:90%; }*/
+div#compare-tray {
+    background: rgba(58, 73, 81, .96);
+    padding: 1.5% 5% 0 5%;
+    width: 90%;
+    opacity: 1;
+}
+
+    div#compare-tray a#viewVehiclesToCompare {
+        color: #fff;
+    }
+
+div.tray-label-container {
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+    width: 100%;
+}
+
+#compare-button {
+    float: right;
+    position: relative;
+    top: -10px;
+}
+
+.secondary-btn.ui-link, .compare-btn.ui-link, li.listdivider .ui-block-b div.ui-btn {
+    background-image: -webkit-gradient(linear, left top, left bottom, from( white /*{a-bar-background-start}*/ ), to( #EAEAEA /*{a-bar-background-end}*/ ));
+    background-image: -webkit-linear-gradient( white /*{a-bar-background-start}*/, #EAEAEA /*{a-bar-background-end}*/ );
+    background-image: -moz-linear-gradient( white /*{a-bar-background-start}*/, #EAEAEA /*{a-bar-background-end}*/ );
+    background-image: -ms-linear-gradient( white /*{a-bar-background-start}*/, #EAEAEA /*{a-bar-background-end}*/ );
+    background-image: -o-linear-gradient( white /*{a-bar-background-start}*/, #EAEAEA /*{a-bar-background-end}*/ );
+    background-image: linear-gradient( white /*{a-bar-background-start}*/, #EAEAEA /*{a-bar-background-end}*/ );
+    color: #5C707C;
+    padding: 7px 10px;
+    border-radius: 5px;
+    text-shadow: none;
+    text-decoration: none;
+    border: 1px solid #E1E1E1;
+    margin: 0px 5px 0px 0px;
+    font-size: 14px;
+}
+
+    li.listdivider .ui-block-b div.ui-btn .ui-btn-inner {
+        padding: 0px;
+    }
+
+.compare-tray-btn.ui-link {
+    background: #93A533;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #A6BC35 ), to( #93A533 ));
+    background-image: -webkit-linear-gradient( #A6BC35, #93A533 );
+    background-image: -moz-linear-gradient( #A6BC35, #93A533 );
+    background-image: -ms-linear-gradient( #A6BC35, #93A533 );
+    background-image: -o-linear-gradient( #A6BC35, #93A533 );
+    background-image: linear-gradient( #A6BC35, #93A533 );
+    border: 1px solid #93A533;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    padding: 10px;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+li.listdivider .ui-block-b div.ui-btn.ui-btn-up-r, li.listdivider .ui-block-b div.ui-btn.ui-btn-hover-r, li.listdivider .ui-block-b div.ui-btn.ui-btn-down-r, li.listdivider .ui-block-b div.ui-btn.ui-btn-active-r, .ui-btn-up-r, .ui-btn-hover-r, .ui-btn-down-r, .ui-btn-active-r {
+    background: #93A533;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #A6BC35 ), to( #93A533 ));
+    background-image: -webkit-linear-gradient( #A6BC35, #93A533 );
+    background-image: -moz-linear-gradient( #A6BC35, #93A533 );
+    background-image: -ms-linear-gradient( #A6BC35, #93A533 );
+    background-image: -o-linear-gradient( #A6BC35, #93A533 );
+    background-image: linear-gradient( #A6BC35, #93A533 );
+    border: 1px solid #93A533;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    padding: 0 10px;
+    text-shadow: none;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li.listdivider .ui-block-b div.ui-btn-up-r .ui-btn-inner, li.listdivider .ui-block-b div.ui-btn-hover-r .ui-btn-inner, li.listdivider .ui-block-b div.ui-btn-down-r .ui-btn-inner, li.listdivider .ui-block-b div.ui-btn-active-r .ui-btn-inner {
+    padding: 5px 10px;
+}
+
+.rebrand-module .ui-btn-up-r .ui-btn-inner, .rebrand-module .ui-btn-hover-r .ui-btn-inner, .rebrand-module .ui-btn-down-r .ui-btn-inner, .rebrand-module .ui-btn-active-r .ui-btn-inner {
+    font-weight: bold;
+}
+
+.rebrand-module .ui-btn .ui-btn-inner {
+    padding: 6px 20px;
+}
+
+/* Footer Styles */
+
+.ui-footer {
+    text-align: center;
+    font-weight: normal;
+    padding: 10px;
+    background-image: linear-gradient(left, #772880 0%, #27035C 100%);
+    background-image: -o-linear-gradient(left, #772880 0%, #27035C 100%);
+    background-image: -moz-linear-gradient(left, #772880 0%, #27035C 100%);
+    background-image: -webkit-linear-gradient(left, #772880 0%, #27035C 100%);
+    background-image: -ms-linear-gradient(left, #772880 0%, #27035C 100%);
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #772880), color-stop(1, #27035C) );
+    color: #fff;
+    font-size: 12px;
+}
+
+    .ui-footer a {
+        color: #fff;
+        font-size: 14px;
+    }
+
+    .ui-footer p {
+        padding: 0px;
+        margin: 5px 0px 0px 0px !important;
+    }
+
+        .ui-footer p a {
+            font-size: 12px;
+        }
+
+    .ui-footer .ui-btn-up-a, .ui-footer .ui-btn-hover-a, .ui-footer .ui-btn-down-a, .ui-footer .ui-btn-active-a, .ui-footer .ui-btn-inner {
+        border: 0px;
+        background-image: none;
+        background-color: transparent;
+        color: #fff;
+        font-weight: normal;
+        padding: 0px;
+        margin: 0px;
+        font-size: 14px;
+        -moz-box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0);
+        -webkit-box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0);
+        box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0);
+        -moz-text-shadow: none;
+        -webkit-text-shadow: none;
+        text-shadow: none;
+        width: auto;
+    }
+
+.certified-badge {
+    border: 1px solid #c9c9c9;
+    background-color: #f4f4f4;
+    width: 148px;
+    font-size: 11px;
+    line-height: 36px;
+    height: 36px;
+}
+
+    .certified-badge img {
+        vertical-align: middle;
+        max-height: 34px;
+        margin: -1px 1px 1px 1px;
+    }
+
+hr {
+    border: 0px;
+    border-top: 1px solid #e1e1e1;
+    margin: 10px -15px -10px -15px;
+}
+
+.map-view {
+    width: 300px;
+}
+
+    .map-view .ui-btn {
+        margin: 10px 0px 0px 0px;
+        float: left;
+    }
+
+    .map-view .ui-block-c .ui-btn {
+        float: right;
+    }
+
+.gallery {
+    margin: 0x 0px 0x 0px;
+    padding: 0px;
+}
+
+    .gallery li {
+        display: inline-block;
+        float: left;
+        height: 75px;
+        list-style-type: none;
+        margin: 0px 10px 10px 5px;
+        padding: 1em 1em 0.5em 1em;
+        text-align: center;
+        width: 95px;
+    }
+
+        .gallery li a {
+            display: inline-block;
+        }
+
+.clearfix {
+    clear: both;
+}
+
+.ui-checkbox {
+    display: inline-block;
+    width: 100%;
+}
+
+#filter-results .ui-checkbox, #filter-results .ui-radio {
+    margin-left: 4px;
+}
+
+#filterbttn {
+    opacity: 1;
+}
+
+.ui-checkbox input, .ui-radio input {
+    width: 16px !important;
+    height: 16px !important;
+    margin: -11px 0px 0px 0px;
+    outline: 0 !important;
+    left: 0;
+    top: 0;
+}
+
+label.inline {
+    padding: 0px 0px 0px 20px;
+}
+
+.val-error {
+    color: #df4600;
+    font-weight: bold;
+}
+
+/* Alert Messages */
+
+.alert_message span {
+    font-weight: bold;
+}
+
+.alert_message p {
+    font-weight: normal;
+}
+
+.alert_message ul {
+    margin-left: -25px;
+    font-weight: normal;
+}
+
+    .alert_message ul li {
+        padding-bottom: 5px;
+    }
+
+.alert_message {
+    border-radius: 5px;
+    margin: 20px 0px 20px 0px;
+    padding: 15px 20px 15px 60px;
+    display: none;
+}
+
+/*The following is the syntax that is defined in the styleguide. Wasn't sure why the above alert message class was set to display: none and didn't want to mess with it just in case it messed something else up.*/
+
+.alert-message span {
+    font-weight: bold;
+}
+
+.alert-message p {
+    font-weight: normal;
+}
+
+.alert-message ul {
+    margin-left: -25px;
+    font-weight: normal;
+}
+
+    .alert-message ul li {
+        padding-bottom: 5px;
+    }
+
+.alert-message {
+    border-radius: 5px;
+    margin: 20px 0px 20px 0px;
+    padding: 15px 20px 5px 60px;
+}
+
+.error {
+    background: url("https://m.cars.com/assets/images/alert.png") no-repeat 20px 10px;
+    border-color: #ffe8e5;
+    background-color: #ffe8e5;
+    color: #cc1100;
+}
+
+.errorField {
+    border-color: #C10 !important;
+}
+
+.validateError {
+    font-weight: normal;
+}
+
+.success {
+    background: url("https://m.cars.com/assets/images/success.png") no-repeat 10px center;
+    border-color: #f4f7ed;
+    background-color: #f4f7ed;
+    color: #6b8e23;
+}
+
+.message {
+    border-color: #dcdcdc;
+    background-color: #dcdcdc;
+    color: #666;
+}
+
+.notification {
+    color: #236b8e;
+    background: url(https://m.cars.com/assets//images/notification.png) no-repeat 20px 10px #ebf5fa;
+    padding-bottom: 1px;
+}
+
+    .notification.no-icon {
+        background-image: none;
+        padding-left: 20px;
+    }
+
+.warning {
+    background: url("https://m.cars.com/assets//images/warning.png") no-repeat 15px 15px;
+    border-color: #dac983;
+    background-color: #f7e5a5;
+    color: #887731;
+}
+
+.sell-trade {
+    color: #236b8e;
+    background: url(https://m.cars.com/assets/images/icon_S&T_circle_blue_big.png) no-repeat 10px center #ebf5fa;
+    padding-bottom: 17px;
+}
+
+textarea.ui-input-text {
+    height: 100px;
+}
+
+p.ui-text-center {
+    text-align: center;
+}
+
+.ui-checkbox .ui-btn-icon-left .ui-btn-inner, .ui-radio .ui-btn-icon-left .ui-btn-inner {
+    display: inline;
+    padding-left: 10px;
+    z-index: none;
+}
+
+.ui-checkbox input, .ui-radio input {
+    margin-top: 1px;
+    z-index: 3;
+}
+
+.module .ui-checkbox input, .module .ui-radio input {
+    margin-top: -3px;
+}
+
+.module .ui-checkbox, .module .ui-radio {
+    margin: 3px 0 0 0px !important;
+}
+
+.module .ui-grid-b label.secondary {
+    padding-left: 24px;
+}
+
+a.add-to-compare-button, a.remove-from-compare-button {
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+    box-shadow: 2px 2px 2px #999;
+    border: 2px solid #fff /*{b-bup-border}*/;
+    background: #f47f34 /*{b-bup-background-color}*/;
+    width: 11%;
+    font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff /*{b-bup-color}*/;
+    text-shadow: 0 /*{b-bup-shadow-x}*/ 1px /*{b-bup-shadow-y}*/ 1px /*{b-bup-shadow-radius}*/ #e45300 /*{b-bup-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #f47f34 /*{b-bup-background-start}*/ ), to( #e45300 /*{b-bup-background-end}*/ )); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient( #f47f34 /*{b-bup-background-start}*/, #e45300 /*{b-bup-background-end}*/ ); /* Chrome 10+, Saf5.1+ */
+    background-image: -moz-linear-gradient( #f47f34 /*{b-bup-background-start}*/, #e45300 /*{b-bup-background-end}*/ ); /* FF3.6 */
+    background-image: -ms-linear-gradient( #f47f34 /*{b-bup-background-start}*/, #e45300 /*{b-bup-background-end}*/ ); /* IE10 */
+    background-image: -o-linear-gradient( #f47f34 /*{b-bup-background-start}*/, #e45300 /*{b-bup-background-end}*/ ); /* Opera 11.10+ */
+    background-image: linear-gradient( #f47f34 /*{b-bup-background-start}*/, #e45300 /*{b-bup-background-end}*/ );
+    -moz-border-radius: 5px /*{global-radii-blocks}*/;
+    -webkit-border-radius: 5px /*{global-radii-blocks}*/;
+    border-radius: 5px /*{global-radii-blocks}*/;
+}
+
+.compare-list table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.compare-list .header td {
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #EEF1F3;
+    border: 0px;
+}
+
+.compare-list table td {
+    border-right: 1px solid #EEF1F3;
+    padding: 5px 10px;
+}
+
+.compare-list .secondary-info {
+    color: #777777;
+}
+
+.compare-list .compare-ad, .compare-list .header .compare-ad {
+    background-color: #FAF8F3;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+.compare-one td {
+    width: 50%;
+}
+
+.compare-two td {
+    width: 33.3%;
+}
+
+.compare-three td {
+    width: 25%;
+}
+
+.remove-all-container {
+    margin: auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.buttons-row {
+}
+
+    .buttons-row .button-container {
+        display: block;
+        min-height: 60px;
+        text-align: center;
+    }
+
+.compare-list .compare-ad span {
+    display: block;
+    margin: 0px 0px 10px 0px;
+}
+
+#vehicle-compare .ui-content {
+    padding: 0px;
+}
+
+#dealersearch-fullscreenmap .ui-header {
+    position: absolute;
+    z-index: 200;
+    width: 100%;
+}
+
+#dealersearch-fullscreenmap .ui-content {
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#map_canvas {
+    width: 100%;
+    position: relative;
+    height: 300px;
+}
+
+#dealersearch-fullscreenmap .ui-content .ui-btn {
+    position: absolute;
+    z-index: 100;
+    top: 39px;
+    right: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ui-overlay-z {
+    background: #666;
+    opacity: .5;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#compare-vehicle-popup, #redirect-confirm-popup {
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    position: absolute !important;
+}
+
+#ad-popup img.close-popup {
+    margin-left: 2px;
+}
+
+#ad-popup .close-container {
+    margin-bottom: 40px;
+}
+
+#smart-target-price {
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+
+    #compare-vehicle-popup h2, #smart-target-price h2 {
+        color: #7B2787;
+        font-family: Arial, Helvetica, Tahoma, sans-serif;
+        font-size: 21px;
+        font-weight: normal;
+        margin-top: 0;
+    }
+
+a.close-popup, img.close-popup {
+    float: right;
+}
+
+#compare-vehicle-popup ul#compare-vehicle-list {
+    clear: both;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+    #compare-vehicle-popup ul#compare-vehicle-list li {
+        border-bottom: 1px solid #E1E1E1;
+        clear: both;
+        float: left;
+        padding: 4%;
+        width: 92%;
+    }
+
+        #compare-vehicle-popup ul#compare-vehicle-list li:last-child {
+            border-bottom: none;
+        }
+
+        #compare-vehicle-popup ul#compare-vehicle-list li .left {
+            float: left;
+            clear: right;
+            width: 30%;
+        }
+
+        #compare-vehicle-popup ul#compare-vehicle-list li .right {
+            float: right;
+            clear: right;
+            width: 66%;
+        }
+
+        #compare-vehicle-popup ul#compare-vehicle-list li p, #compare-vehicle-popup ul#compare-vehicle-list li h3, #smart-target-price p {
+            font-size: 12px;
+            line-height: 15px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+#smart-target-price p {
+    padding-bottom: 5px;
+}
+
+#smart-target-price ul li {
+    padding-bottom: 10px;
+}
+
+#compare-vehicle-popup ul#compare-vehicle-list a.remove-from-compare {
+    float: right;
+}
+
+#redirect-confirm-popup p {
+    width: 300px;
+}
+
+#orientation-alert-popup {
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    color: #FFF;
+}
+
+#geolocationdelayscreen {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    color: #FFF;
+    height: 478px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 999999;
+}
+
+.remove-icon {
+    height: 16px;
+    width: 16px;
+    vertical-align: text-bottom;
+}
+
+#compare-chart .compare-btn.ui-link.btn-inline {
+    display: inline-block;
+    min-width: 90px;
+    padding: 10px;
+}
+
+#compare-chart .compare-btn.ui-link {
+    display: block;
+    margin: 0px 0px 10px 0px;
+    padding: 10px 0px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.special-offers-tag {
+    background: url(https://m.cars.com/assets/images/special-offers-green.png) no-repeat left center transparent;
+    background-size: 16px;
+    padding: 8px 10px 8px 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.special-offers-tag-background {
+    background-color: #EDF1F4;
+    background-size: 16px;
+    padding: 8px 15px;
+    font-weight: bold;
+    margin: auto -15px;
+}
+
+    .special-offers-tag-background .special-offers-tag {
+        float: left;
+        margin-right: -15px;
+    }
+
+.special-offer-header {
+    background: url(https://m.cars.com/assets/images/special-offers-green.png) no-repeat 10px center #EDF1F4;
+    background-size: 16px;
+    border-radius: 10px 10px 0 0;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+}
+
+    .special-offer-header a {
+        padding: 7px 10px 7px 30px;
+        display: block;
+    }
+
+.special-offers-container {
+    background: url(https://m.cars.com/assets/images/arrow-right.png) no-repeat right center transparent;
+}
+
+    .special-offers-container h3 {
+        margin-bottom: 10px;
+    }
+
+.marginBottomSmall {
+    margin-bottom: 5px;
+}
+
+.special-offers-container strong {
+    display: inline-block;
+    width: 150px;
+}
+
+#popUpLayer {
+    width: 100%;
+    background: transparent;
+    height: 600px;
+    position: absolute;
+    z-index: 100;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+
+.italictext {
+    font-style: italic;
+}
+
+.valign-middle {
+    vertical-align: middle;
+}
+
+.rebrand-module label {
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.radius-of-zip .ui-block-b {
+    padding: 10px 0 0 0;
+    width: 10%;
+    text-align: center;
+    margin: 0px;
+}
+
+.radius-of-zip .ui-block-a {
+    width: 55%;
+}
+
+.radius-of-zip .ui-block-c {
+    width: 35%;
+}
+
+.listdivider .ui-block-a .ui-btn {
+    border: 0px;
+}
+
+    .listdivider .ui-block-a .ui-btn .ui-btn-inner {
+        padding: 5px 0px 5px 12px;
+        min-width: auto;
+        background: url(https://m.cars.com/assets/images/filter.png) no-repeat left center transparent;
+        background-size: 16px auto;
+    }
+
+    .listdivider .ui-block-a .ui-btn .ui-btn-text {
+        color: #098ae4 !important;
+        text-align: left;
+    }
+
+.optional-field .ui-block-b {
+    padding: 10px !important;
+}
+
+ul.sub-links a, .ui-popup-container ul.sub-links a {
+    text-align: left;
+    color: #5c707c !important;
+    background: url(https://m.cars.com/assets/images/rebrand_sprites.png) no-repeat right -347px transparent;
+    padding: 16px 0px 16px 15px !important;
+    margin-right: 15px;
+}
+
+.ui-popup-container ul.sub-links a {
+    display: block;
+}
+
+.ui-popup-container {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    min-width: 295px;
+}
+
+    .ui-popup-container ul.sub-links {
+        list-style: none;
+        list-style-position: inside;
+        margin: 0px !important;
+        padding: 0px;
+    }
+
+.ui-popup .ui-container, .popup-standard {
+    padding: 15px 15px 15px 15px;
+}
+
+.save-search-login {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.ui-popup-container .sub-links li {
+    border-bottom: 1px solid #e1e1e1 !important;
+}
+
+.ui-popup-container li:last-child {
+    border-bottom: 0px !important;
+}
+
+.ui-popup-container .buttons-container {
+    white-space: nowrap;
+}
+
+ul.sub-links a.opened {
+    background-position: right -480px;
+}
+
+ul.sub-links li {
+    border-color: #e1e1e1 !important;
+}
+
+ul.sub-links {
+    border-top: 1px solid #e1e1e1 !important;
+    margin: 30px -15px -15px !important;
+}
+
+    ul.sub-links.no-top-border {
+        border-top: 0px solid #e1e1e1 !important;
+    }
+
+        ul.sub-links.no-top-border.bump-up a {
+            margin-top: -11px !important;
+        }
+
+    ul.sub-links.margin-bottom-fix {
+        margin-bottom: 15px !important;
+    }
+
+    ul.sub-links.margin-top-fix {
+        margin-top: 0px !important;
+    }
+
+ul.drp .details {
+    width: 100%;
+}
+
+ul.sub-links.main-list {
+    margin-bottom: 21px !important;
+}
+
+ul.drp .details {
+    width: 100%;
+}
+
+    ul.drp .details .milesaway {
+        float: right;
+        font-weight: normal;
+        display: block;
+    }
+
+.milesaway {
+    color: #999;
+}
+
+ul .details .dealername {
+    color: #999;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0px 0 10px 0;
+    display: block;
+}
+
+#record-list {
+    border-top: 1px solid #e1e1e1 !important;
+    margin-top: 20px !important;
+}
+
+    #record-list li {
+        padding: 10px 15px 20px 15px;
+    }
+
+#vehiclerecord-list li {
+    padding: 20px 15px;
+}
+
+    #record-list li p, #vehiclerecord-list li p {
+        padding: 5px 0 0 0;
+        margin: 0px;
+    }
+
+#record-list li .list-actions {
+    margin: 10px 0 0 0;
+}
+
+.space {
+    padding: 0px 5px;
+}
+
+.helper-text {
+    color: #95A1AA;
+    margin: -5px 0 10px 0;
+}
+
+#dealersearch-srp ul h3 {
+    padding-right: 80px;
+}
+
+/* Ratings */
+
+.rating.consumer .wrapper, .rating.dealer .wrapper {
+    float: left;
+    width: 79px;
+    height: 14px;
+}
+
+.rating.consumer .wrapper {
+    background: url(https://m.cars.com/assets/images/rating-consumer.png) no-repeat -50px top #d5dfe2;
+}
+
+.rating.dealer .wrapper {
+    background: url(https://m.cars.com/assets/images/rating-dealer.png) no-repeat -79px top #d5dfe2;
+}
+
+.rating.overall .wrapper {
+    width: 80px;
+    height: 8px;
+    margin: 4px 0 0 0;
+    background: #eef1f3;
+    float: left;
+}
+
+.rating .value {
+    background: url(https://m.cars.com/assets/images/rating-stars-cutout.png) no-repeat left top transparent;
+    width: 79px;
+    height: 14px;
+}
+
+.rating.overall .value {
+    background: none repeat scroll 0 0 #C7D3D9;
+    height: 8px;
+    width: 0;
+}
+
+.rating .detail {
+    float: left;
+    background: #fff;
+    height: 14px;
+    font-size: 14px;
+    color: #333;
+    padding: 0 0 0 6px;
+}
+
+.rating.overall .detail {
+    color: #333;
+    font-weight: normal;
+    float: left;
+    padding: 0 0 0 5px;
+}
+
+.overall-rating .rating {
+    float: right;
+}
+
+.reviewer-info {
+    color: #5A707A;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before, .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+label.secondary {
+    font-weight: normal;
+}
+
+form .ui-checkbox, form .ui-radio {
+    display: inline;
+    margin: 0px 0px 0px -20px;
+}
+
+.ui-grid-b .ui-checkbox, .ui-grid-b .ui-radio {
+    float: left;
+    margin: 0px 25px 0 -19px;
+}
+
+.ui-body-a, .ui-overlay-a {
+    color: #333333 /*{a-body-color}*/;
+    text-shadow: 0 /*{a-body-shadow-x}*/ 0 /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #ffffff /*{a-body-shadow-color}*/;
+}
+
+    .ui-body-a, .ui-body-a input, .ui-body-a select, .ui-body-a textarea, .ui-body-a button {
+        font-family: Arial, Helvetica, sans-serif /*{global-font-family}*/;
+        font-size: 14px;
+    }
+
+/*Google Map Styles*/
+#directionsResults {
+    margin-top: -15px !important;
+}
+
+#directionsInput {
+    margin-bottom: 30px;
+}
+
+.ui-disabled, .ui-disabled .ui-btn-text {
+    opacity: 0.5 !important;
+}
+
+.adp-summary {
+    padding-left: 43px;
+}
+
+table.adp-placemark {
+    border: none;
+    margin: 0px 5px;
+}
+
+table.adp-directions {
+    margin: 0px 5px;
+    width: 100%;
+}
+
+.adp-legal {
+    margin: 30px 10px 0;
+}
+
+table.adp-directions {
+    margin: 0px auto;
+    width: 90%;
+}
+
+    table.adp-directions tr td.adp-substep {
+        text-decoration-line: none;
+        border: none;
+        padding: 10px 0px;
+    }
+
+    table.adp-directions tr td:nth-child(2) {
+        font-weight: bold;
+        padding-right: 5px;
+    }
+
+    table.adp-directions tr td:nth-child(1), table.adp-directions tr td:nth-child(2), table.adp-directions tr td:nth-child(3), table.adp-directions tr td:nth-child(4) {
+        border-bottom: 1px solid #e9e9e9;
+    }
+
+.adp-distance {
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 3px;
+    padding-left: 10px;
+}
+
+table.adp-directions tr td:nth-child(4) {
+    vertical-align: bottom;
+    padding: 0px;
+    border-spacing: 0px;
+}
+
+td.adp-substep {
+    padding: 0px 0px 10px 0px;
+    border-top: none;
+}
+
+/* this is for the start and stop icons*/
+#adp-placemark img, .adp-placemark img {
+    display: none;
+}
+
+#adp-placemark {
+    font-weight: bold;
+    padding: 10px 10px 10px 30px;
+    background: white url(https://m.cars.com/assets/images/pin_a.png) no-repeat left center;
+}
+
+.adp-placemark {
+    font-weight: bold;
+    padding: 10px 10px 10px 30px;
+    background: white url(https://m.cars.com/assets/images/pin_b.png) no-repeat left center;
+}
+
+/* placeholder */
+
+::-webkit-input-placeholder {
+    color: #000;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #000;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: #000;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+}
+
+/* /placeholder */
+
+
+/* dirctoinal icons */
+.direction-column {
+    width: 38px;
+}
+
+.direction-icon {
+    width: 29px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-image: url(https://m.cars.com/assets/images/directions.png);
+}
+
+.direction-none {
+    background-position: center 200px;
+}
+
+.direction-exit {
+    background-position: center -341px;
+}
+
+.direction-exit-left {
+    background-position: center -515px;
+}
+
+.direction-merge {
+    background-position: center -267px;
+}
+
+.direction-right {
+    background-position: center -69px;
+}
+
+.direction-slight-right {
+    background-position: center -87px;
+}
+
+.direction-sharp-right {
+    background-position: center -178px;
+}
+
+.direction-take-exit, .direction-exit-right {
+    background-position: center -340px;
+}
+
+.direction-keep-right {
+    background-position: center -213px;
+}
+
+.direction-left {
+    background-position: center -16px;
+}
+
+.direction-slight-left {
+    background-position: center -446px;
+}
+
+.direction-sharp-left {
+    background-position: center -160px;
+}
+
+.direction-keep-left {
+    background-position: center -286px;
+}
+
+.direction-ferry {
+    background-position: center -359px;
+}
+
+.direction-train {
+    background-position: center -394px;
+}
+
+.direction-circle {
+    background-position: center -125px;
+}
+
+.direction-u-turn {
+    background-position: center -465px;
+}
+
+/* End of Google Map Styles */
+
+/* Driving Directions extra styles */
+
+#dealersearch-drivingdirections ul.sub-links li {
+    margin-bottom: 20px;
+}
+
+#dealersearch-drivingdirections #directionsPanel {
+    margin-top: 10px;
+}
+
+#dealersearch-drivingdirections #directionsInput {
+    margin-bottom: 40px;
+}
+
+.hidden-at-start {
+    display: none;
+}
+
+.textToChat {
+    font-weight: bold;
+    color: #333;
+    padding: 10px 0px 15px;
+    text-align: center;
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    margin: 5px 0px 15px;
+}
+
+    .textToChat a {
+        font-weight: normal;
+    }
+
+    .textToChat span {
+        font-weight: normal;
+        color: #999;
+    }
+
+/* End of Driving Directions extra styles */
+
+/* Research Trim Details styles */
+
+#trim-details .secondary {
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+#trim-details .research-info-item {
+    width: 100%;
+    position: relative;
+    margin: 0 -15px;
+    padding: 10px 15px;
+}
+
+    #trim-details .research-info-item.link::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        margin-top: -10px;
+        width: 16px;
+        height: 20px;
+        background: url(https://m.cars.com/assets/images/rebrand_sprites.png) no-repeat right -364px transparent;
+        display: block;
+    }
+
+    #trim-details .research-info-item.link.opened:after {
+        background-position: right -497px;
+    }
+
+    #trim-details .research-info-item > div, #trim-details .research-info-item > a {
+        line-height: 22px;
+        padding-right: 40px;
+    }
+
+#trim-details .additional-info > div.research-info-item:not(:first-of-type) {
+    border-top: 1px solid #e1e1e1;
+}
+
+#trim-details .additional-info > div.research-info-item:last-of-type {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+#trim-details .safety span:not(:last-of-type)::after {
+    content: ", ";
+}
+
+#trim-details .additional-info .research-info-item > div {
+    font-weight: bold;
+}
+
+#trim-details .research-specifications {
+    font-size: 13px;
+    margin: 15px 40px 15px 0;
+    line-height: 18px;
+}
+
+/* End of Research Trim Details styles */
+
+/* Research Dashboard styles */
+
+#dashboard-page .secondary, #bb-details .secondary {
+    margin-top: 13px;
+    margin-bottom: 13px;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    clear: both;
+}
+
+#dashboard-page .see-all-styles {
+    float: right;
+    margin-top: 8px;
+}
+
+#rcm-trimlist .link {
+    background: url(https://m.cars.com/assets/images/rebrand_sprites.png) no-repeat right -355px transparent;
+}
+
+#dashboard-page .link {
+    position: relative;
+}
+
+    #dashboard-page .link::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -10px;
+        width: 16px;
+        height: 20px;
+        background: url(https://m.cars.com/assets/images/rebrand_sprites.png) no-repeat right -364px transparent;
+        display: block;
+    }
+
+#dashboard-page .expert-revs {
+    width: 50%;
+    font-size: 13px;
+}
+
+    #dashboard-page .expert-revs > div {
+        padding: 0 6px;
+    }
+
+    #dashboard-page .expert-revs.pros {
+        float: left;
+    }
+
+    #dashboard-page .expert-revs.cons {
+        margin-left: 50%;
+    }
+
+#dashboard-page .all-expert-reviews {
+    width: 100%;
+    position: relative;
+    margin: 0 -15px;
+    margin-top: 13px;
+    margin-bottom: -13px;
+    padding: 10px 15px;
+    color: #6a6a6a;
+    font-size: 14px;
+    font-weight: bold;
+    border-top: 1px solid #e1e1e1;
+    clear: both;
+}
+
+    #dashboard-page .all-expert-reviews::after {
+        right: 15px;
+    }
+
+/* End of Research Dashboard styles */
+
+
+.dealer-review {
+    padding: 10px 0px 10px 0px;
+    margin: 0px 0px 30px 0px;
+}
+
+.dealer-review-container {
+    margin: 0 0 10px 0;
+}
+
+    .dealer-review-container h4 {
+        margin: 20px 0 -10px 120px;
+    }
+
+.radio-button-label-fix .ui-radio {
+    margin: 0px;
+}
+
+.radio-button-label-fix label {
+    padding-left: 20px;
+}
+
+#linktoddp {
+    margin-top: 15px;
+}
+
+.dealer-review-response {
+    padding-left: 30px;
+    background: url(https://m.cars.com/assets/images/dealer-icon.png) no-repeat 0px 0px #fff;
+    background-size: 19px 20px;
+}
+
+#home .searchtype {
+    margin: -5px 0 30px 0;
+}
+
+    #home .searchtype a {
+        margin-left: 0px;
+    }
+
+        #home .searchtype a .ui-btn-inner {
+            padding: 0.375em 0px;
+        }
+
+#home .sub-links {
+    margin-top: 6px !important;
+}
+
+.relative_position {
+    position: relative;
+}
+
+/* APP BANNER STYLES */
+
+#app-banner {
+    display: none;
+    width: 100%;
+    height: 38px;
+    text-align: center;
+    background-color: #EEF1F3;
+}
+
+    #app-banner > span {
+        padding: 10px 15px;
+        margin-left: -10px;
+        font-size: 13px;
+        line-height: 38px;
+        color: #098ae4;
+        background: url(https://m.cars.com/assets/images/rebrand_sprites.png) no-repeat right -355px transparent;
+        background-size: auto;
+    }
+
+    #app-banner.android > span {
+        background-position: right -356px;
+    }
+
+    #app-banner.android > span {
+        background-position: right -357px;
+    }
+
+.hyperdrive-dealer-unit {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 15px;
+    margin: 0px -15px;
+}
+
+    .hyperdrive-dealer-unit .dealer-logo {
+        float: left;
+        margin: 0 15px 10px 0;
+    }
+
+    .hyperdrive-dealer-unit .details {
+        float: left;
+        line-height: 24px;
+        color: #94A0AA;
+        font-weight: bold;
+    }
+
+    .hyperdrive-dealer-unit .detail {
+        margin-bottom: 5px;
+    }
+
+    .hyperdrive-dealer-unit .address {
+        color: #999;
+        clear: both;
+    }
+
+    .hyperdrive-dealer-unit .clickable-section {
+        padding-right: 9px;
+    }
+
+    .hyperdrive-dealer-unit h2.sticky {
+        margin-top: 0px; /* setting the initial position of the sticky element. */
+        position: relative; /* setting position relative to so element scrolls normally */
+        z-index: 1000;
+        display: block;
+        width: 100%;
+    }
+
+    .hyperdrive-dealer-unit h2.float {
+        background: #fff;
+        position: fixed; /* setting the position to fixed so the content stays at its location */
+        margin: 0px -15px; /* since we have top margin assigned to the element. This will cancel it. */
+        padding: 20px 15px 10px;
+        top: 0px;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #e1e1e1;
+    }
+
+/* Hyperdrive Ad Styles */
+
+ul .hyperdrive-ad.ui-btn-up-d, .ui-listview-inset .hyperdrive-ad.ui-li {
+    border: 0px !important;
+    border-bottom: 1px solid #e1e1e1 !important;
+    padding: 15px 15px 25px 15px !important;
+}
+
+ul .hyperdrive-ad, #dashboard-page .hyperdrive-ad {
+    background: #f9f7f0;
+    cursor: default;
+}
+
+#dashboard-page .hyperdrive-ad {
+    margin: auto -15px;
+}
+
+    #dashboard-page .hyperdrive-ad h3.secondary {
+        padding: 8px 30px;
+        background-color: #eef1e6;
+    }
+
+        #dashboard-page .hyperdrive-ad h3.secondary .ui-link {
+            float: right;
+        }
+
+#dashboard-page .hyperdrive-wrapper {
+    padding: 2px 15px 15px 15px;
+    line-height: 21px;
+}
+
+    #dashboard-page .hyperdrive-wrapper hr {
+        margin: 20px 0px;
+    }
+
+    #dashboard-page .hyperdrive-wrapper .distance {
+        color: #999;
+        display: block;
+    }
+
+    #dashboard-page .hyperdrive-wrapper img {
+        width: 100px;
+        height: auto;
+        float: left;
+        margin-right: 20px;
+    }
+
+    #dashboard-page .hyperdrive-wrapper h4, ul .hyperdrive-ad h4 {
+        display: block;
+        margin: 0px;
+        font-size: 16px;
+    }
+
+    #dashboard-page .hyperdrive-wrapper .rating .wrapper {
+        margin-top: 3px;
+    }
+
+    #dashboard-page .hyperdrive-wrapper .rating .value {
+        background: url("https://m.cars.com/assets/images/rating-stars-cutout-hyperdrive.png");
+    }
+
+    #dashboard-page .hyperdrive-wrapper .note {
+        text-align: center;
+        color: #999;
+    }
+
+ul .hyperdrive-ad.ui-btn-up-d .ui-btn-inner {
+    padding: 0px;
+}
+
+.hyperdrive-ad .featured, #dashboard-page .hyperdrive-wrapper .featured {
+    color: #999;
+    float: right;
+    font-size: 12px;
+}
+
+ul .hyperdrive-ad.ui-btn-up-d .ui-btn-inner, ul .hyperdrive-ad .ui-btn-inner {
+    padding: 0px;
+}
+
+    ul .hyperdrive-ad.ui-btn-up-d .ui-btn-inner a.ui-link-inherit, ul .hyperdrive-ad .ui-btn-inner a.ui-link-inherit {
+        padding: 0px 0px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+ul .hyperdrive-ad .ui-block-a, ul .hyperdrive-ad .ui-block-b, ul .hyperdrive-ad .ui-block-c {
+    border-right: 10px solid #f9f7f0;
+    text-align: center;
+}
+
+.hyperdrive-ad a.hd-dealer {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.hd-dealer-title h4 {
+    color: #7B2787;
+    background: url("https://m.cars.com/assets/images/directionspin_hd.png");
+    background-repeat: no-repeat;
+    padding-left: 15px;
+}
+
+.hyperdrive-ad .hd-vehicle {
+    float: left;
+    width: 32%;
+    text-align: center;
+    height: 100%;
+}
+
+    .hyperdrive-ad .hd-vehicle img {
+        border: 1px solid #e1e1e1;
+        margin-top: 10px;
+    }
+
+#hyperdriveAd a.arrow {
+    display: inline;
+    padding: 0 30px 0 0;
+    white-space: normal !important;
+    line-height: 48px;
+    background: url("https://m.cars.com/assets/images/rebrand-arrow.png") bottom right no-repeat transparent;
+}
+
+.hyperdrive-ad .hd-vehicle:nth-child(2) {
+    margin: 0 12%;
+}
+
+.hyperdrive-ad .hd-listings-1 .hd-vehicle:first-child {
+    margin-left: 34%;
+}
+
+.hyperdrive-ad .hd-listings-2 .hd-vehicle:first-child {
+    margin-left: 10%;
+}
+
+.hyperdrive-ad .hd-prices {
+    margin-bottom: 13px;
+}
+
+.hyperdrive-ad .hd-vehicle {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hd-vehicle .mm-names {
+    color: #098ae4;
+}
+
+.hd-vehicle .price {
+    color: #7B2787;
+}
+
+.hd-ad-dealer-panel {
+    margin-top: 10px;
+}
+
+    .hd-ad-dealer-panel:after {
+        margin-top: -47px;
+    }
+
+    .hd-ad-dealer-panel .phone {
+        margin-top: 15px;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-top: 15px;
+        text-align: center;
+        border-top: 1px solid #E1E1E1;
+        color: #999;
+    }
+
+        .hd-ad-dealer-panel .phone a {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+    .hd-ad-dealer-panel .rating .value {
+        background: url("https://m.cars.com/assets/images/rating-stars-cutout-hyperdrive.png");
+    }
+
+    .hd-ad-dealer-panel .hd-phone-button {
+        background: #93A533;
+        background-image: -webkit-gradient(linear, left top, left bottom, from( #A6BC35 ), to( #93A533 ));
+        background-image: -webkit-linear-gradient( #A6BC35, #93A533 );
+        background-image: -moz-linear-gradient( #A6BC35, #93A533 );
+        background-image: -ms-linear-gradient( #A6BC35, #93A533 );
+        background-image: -o-linear-gradient( #A6BC35, #93A533 );
+        background-image: linear-gradient( #A6BC35, #93A533 );
+        border: 1px solid #93A533;
+        color: #fff;
+        padding: 7px 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        border-radius: 5px;
+        display: inline-block;
+    }
+
+/* Hyperdrive Ad Styles */
+
+/* Vehicle Review Styles */
+
+.vehicle-preview img {
+    width: 100%;
+    margin: 0 20px 0 0;
+}
+
+.vehicle-preview .ui-block-b .data {
+    margin-top: 20px;
+    line-height: 24px;
+}
+
+.review-content .detail {
+    padding-right: 10px;
+}
+
+.review-content .reviewed-by {
+    margin-top: 5px;
+}
+
+.review-content {
+    clear: both;
+    border-bottom: 1px solid #e1e1e1;
+    margin: 0px auto 20px;
+    padding-bottom: 5px;
+}
+
+#sortSelector {
+    margin-bottom: 20px;
+}
+
+table.overall-rating {
+    width: 100%;
+    margin: 20px 0;
+}
+
+    table.overall-rating td {
+        padding: 5px 0;
+    }
+
+.review-btns .ui-link {
+    color: #fff;
+}
+
+/* SRP abtest */
+
+ul.srp-test .ui-btn-up-d .img-container {
+    width: 100%;
+}
+
+#vehiclerecord-list.srp-test li div.left {
+    width: 65%;
+    margin-right: 5%;
+}
+
+#vehiclerecord-list.srp-test li div.right {
+    width: 30%;
+    margin: 0;
+    float: right;
+    text-align: right;
+}
+
+#vehiclerecord-list.srp-test .special-offers-tag {
+    color: #098ae4;
+    font-weight: normal;
+    margin: -9px 0 -3px 0;
+    display: block;
+}
+
+#vehiclerecord-list.srp-test .cpo {
+    color: #333;
+    margin: 1px 0 5px 0;
+    display: block;
+}
+
+#vehiclerecord-list.srp-test li p, #vehiclerecord-list.srp-test li .sellerName, #vehiclerecord-list.srp-test li .mileAway {
+    color: #999;
+    padding: 0;
+}
+
+    #vehiclerecord-list.srp-test li p span.mileAway {
+        display: inline-block;
+    }
+
+#vehiclerecord-list.srp-test li .miles {
+    color: #999;
+    padding: 10px 0 0 0;
+}
+
+#vehiclerecord-list.srp-test li .compare-btn-alignment {
+    margin-top: 15px;
+    clear: both;
+}
+
+#vehiclerecord-list.srp-test li .compare-btn.ui-link {
+    margin: 0px;
+}
+
+#vehiclerecord-list.srp-test li .stockphoto {
+    margin: 5px 0;
+}
+
+#vehiclerecord-list li.featured-ad {
+    padding: 20px 15px 30px 15px;
+}
+
+.featured-ad .container {
+    background: #f5f1e4;
+    border-radius: 5px;
+    margin: 0 -10px -10px;
+    padding: 10px;
+}
+
+.featured-ad .label {
+    color: #95A1AA;
+    font-size: 12px;
+}
+
+.featured-ad .right strong {
+    color: #333;
+    font-size: 12px;
+}
+
+.featured-ad .ui-link.external {
+    color: #333;
+}
+
+#vehiclerecord-list .featured-ad .ymm {
+    padding: 0 0 5px 0;
+}
+
+.featured-ad .oem {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.featured-ad .advertisement.container {
+    background: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.outbound-icon {
+    background: url(https://m.cars.com/assets/images/icon-outbound-link.png) no-repeat;
+    padding-left: 22px;
+}
+
+#vehiclerecord-list.srp-test #linerad div.right p {
+    padding: 5px 0 0 0;
+}
+
+#vehiclerecord-list.srp-test #linerad div.right {
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+#vehiclerecord-list.srp-test #linerad div.left {
+    width: 100px;
+}
+
+#vehiclerecord-list.srp-test li .city-st {
+    padding: 5px 0;
+}
+
+#vehiclerecord-list.srp-test .img-container img {
+    max-height: none;
+}
+
+#dealersearch-srp #sortDropDown .ui-select {
+    margin: 0;
+    width: 55%;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.newlylisted-tag {
+    color: #93A445;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#filtertopbuttons {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul #filtertopbuttons .ui-btn {
+    margin: 0.5em 10px 0.5em 0px;
+    display: block;
+}
+
+#filterclearallbutton .ui-btn-text {
+    font-weight: bold;
+    color: #5C707C;
+}
+
+#filterclearallbutton {
+    padding: 0 10px;
+}
+
+#login hr {
+    margin: 20px 0;
+}
+
+#login .secondary-btn {
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+}
+
+.login.ui-link {
+    display: block;
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.device-sync-icon {
+    margin: 10px auto 20px auto;
+    width: 100%;
+    clear: both;
+}
+
+.header-btn {
+    float: right;
+}
+
+.saved-search-tray {
+    margin: -20px -15px;
+    padding: 15px;
+    background: #EEF1F3;
+}
+
+#profileSaveForm .alert_message {
+    margin-top: 0;
+}
+
+#profileSaveForm .saved-search-tray p.formHelpText {
+    color: #999;
+    padding: 0 0 10px;
+}
+
+#profileSaveForm #profileSaveName.invalid {
+    border-color: #cc1100;
+}
+
+#saved-content {
+    margin-top: 20px;
+}
+
+.tab-content ul.saved-content-listing {
+    margin: 0px -15px;
+}
+
+.saved-content-listing .icon-remove {
+    background: url(https://m.cars.com/assets/images/remove.png) no-repeat right center transparent;
+    float: right;
+    padding: 12px 24px 12px 0;
+    margin-left: 10px;
+    position: relative;
+    z-index: 11;
+}
+
+.ui-checkbox label.ui-btn, .ui-radio label.ui-btn {
+    margin: 0px;
+}
+
+label.ui-btn-up-a, label.ui-btn-hover-a {
+    background: transparent;
+    border: 0px;
+    padding: 0px 10px;
+    display: inline;
+    color: #333;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+    label.ui-btn-up-a .ui-btn-text, label.ui-btn-hover-a .ui-btn-text {
+        font-size: 14px;
+        font-weight: bold;
+        text-shadow: none;
+    }
+
+.dont-show-message {
+    margin: 15px 0;
+}
+
+    .dont-show-message input {
+        margin-top: 4px;
+    }
+
+.dealer-search-results #saveSearchButton {
+    margin-top: -45px;
+}
+
+/* Favorites styles */
+
+.no-favorites .secondary-btn {
+    display: block;
+    text-align: center;
+}
+
+.no-favorites hr {
+    margin: 20px 0;
+}
+
+.tab-content .no-favorites {
+    margin-top: 20px;
+}
+
+.overlay-sold {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255,255,255,0.88);
+    z-index: 10;
+    vertical-align: middle;
+    text-align: center;
+    display: block;
+}
+
+div.sold-msg {
+    color: #333;
+    text-align: center;
+    width: 75%;
+    border: 1px solid #EEF1F3;
+    background-color: #EEF1F3;
+    border-radius: 10px;
+    padding: 10px 25px 20px 15px;
+    position: relative;
+    margin: 50px 0px 0px 4%;
+}
+
+.gigyaButtonWrapper {
+    text-align: center;
+}
+
+.gigyaButton {
+    margin: 0 auto;
+}
+
+.orRule {
+    background: transparent url('https://m.cars.com/assets/images/or.png') 50% 50% no-repeat;
+    margin: 25px auto 20px;
+    height: 30px;
+    width: 100%;
+}
+
+.ui-checkbox label.ui-btn, .ui-radio label.ui-btn {
+    margin: 0px;
+}
+
+label.ui-btn-up-a, label.ui-btn-hover-a {
+    background: transparent;
+    border: 0px;
+    padding: 0px 10px;
+    display: inline;
+    color: #333;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+    label.ui-btn-up-a .ui-btn-text, label.ui-btn-hover-a .ui-btn-text {
+        font-size: 14px;
+        font-weight: bold;
+        text-shadow: none;
+    }
+
+.ui-li-static.ui-li.hide-now {
+    display: none;
+}
+/* *******************************************************
+    DEALER PRESENCE ( i.e /dealer )
+******************************************************** */
+#search-widget .editSearch {
+    display: block;
+    font-weight: normal;
+    margin: 20px 0 30px;
+}
+
+#saveSearchButton.save-search-dealersrp {
+    margin-top: -45px;
+}
+
+color: #098ae4; .guideline-display .guideline-title,
+.guideline-display .toggle-icon,
+.guideline-display.open .guideline-title,
+.guideline-display.open .toggle-icon,
+.guideline-display .guideline-content,
+.results {
+    font-size: 14px;
+}
+
+    .results h3 {
+        vertical-align: middle;
+    }
+
+    .results .partyHeader {
+        display: table;
+        width: 100%;
+    }
+
+.partyHeader h3,
+.partyHeader .partyDistance {
+    display: table-cell;
+}
+
+.partyHeader h3 {
+    font-size: 16px;
+    padding: 0;
+    vertical-align: middle;
+    width: 60%;
+}
+
+.results .partyDistance {
+    background: url(https://m.cars.com/assets/images/dot-pin-mobile.png) no-repeat top right;
+    background-repeat: no-repeat;
+    color: #aaa;
+    padding-right: 32px;
+    height: 44px;
+    text-align: right;
+}
+
+    .results .partyDistance span {
+        display: block;
+        margin-top: 11px;
+        font-weight: normal;
+    }
+
+.results .certifiedPricing {
+    font-size: 14px;
+    font-weight: bold;
+    display: table;
+    margin-bottom: 10px;
+}
+
+    .results .certifiedPricing .certified {
+        background: url(//graphics.cars.com/images/core/service/rpc-certified.svg) no-repeat top left;
+        height: 45px;
+        padding-left: 52px;
+    }
+
+    .results .certifiedPricing .certified,
+    .results .certifiedPricing .servicePriceLink {
+        display: table-cell;
+        font-size: 12px;
+        vertical-align: middle;
+    }
+
+.servicePriceLink {
+    font-weight: normal;
+    padding-left: 15px;
+}
+
+.results .certifiedPricing .certified {
+    width: 50%;
+}
+
+.results .rating.dealer {
+    margin: 0;
+}
+
+    .results .rating.dealer .detail {
+        color: #098ae4;
+    }
+
+        .results .rating.dealer .detail .overall-rating {
+            color: #000;
+        }
+
+        .results .rating.dealer .detail .overall-rating {
+            color: #000;
+        }
+
+        .results .rating.dealer .detail em {
+            color: #94a0aa;
+            font-style: normal;
+        }
+
+    .results .rating.dealer:after {
+        content: ".";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+    }
+
+.results .contactInfo {
+    display: table;
+    width: 100%;
+}
+
+    .results .contactInfo address,
+    .results .contactInfo .phoneBtn {
+        display: table-cell;
+    }
+
+        .results .contactInfo .phoneBtn span {
+            white-space: nowrap;
+        }
+
+    .results .contactInfo address {
+        font-style: normal;
+        line-height: 20px;
+        padding: 10px 0;
+        width: 60%;
+        vertical-align: middle;
+    }
+
+    .results .contactInfo .phoneBtn {
+        width: 40%;
+    }
+
+        .results .contactInfo .phoneBtn .ui-btn-inner {
+            padding: 0.4em 0;
+        }
+
+.results .phone-number {
+    margin-bottom: 10px;
+}
+
+    .results .phone-number .type {
+        width: 75px;
+        display: inline-block;
+    }
+
+    .results .phone-number .number {
+        width: 300px;
+    }
+
+        .results .phone-number .number a {
+            font-weight: normal;
+        }
+
+.appraisalLabel {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+.appraisalCheckbox {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+}
+
+/* *******************************************************
+    ToggleMenu styles
+******************************************************** */
+#toggleMenuTarget + #record-list {
+    margin-top: 0 !important;
+}
+
+.toggleMenu {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin: 20px -15px 0;
+}
+
+#toggleMenuTarget h4 {
+    color: #7B2787;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+    #toggleMenuTarget h4.rpcTitle {
+        background: url(//graphics.cars.com/images/core/service/rpc-certified.svg) no-repeat top left;
+        height: 24px;
+        padding-left: 40px;
+        display: block;
+        padding-top: 7px;
+    }
+
+.toggleMenu > li {
+    border-top: 1px solid #e1e1e1;
+}
+
+.guideline-display .guideline-title,
+.toggleMenuTrigger {
+    text-decoration: none;
+    padding: 8px 0 0;
+    display: block;
+    transition-property: background-color;
+    transition-duration: 0.35s;
+    transition-timing-function: ease-out;
+}
+
+    .guideline-display .toggle-icon,
+    .toggleMenuTrigger .toggle-icon {
+        background-image: url(https://m.cars.com/assets/images/chevron-down-mobile.png);
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        transition-property: transform;
+        transition-duration: 0.35s;
+        transition-timing-function: ease-out;
+    }
+
+    .guideline-display.open .guideline-title,
+    .toggleMenuTrigger.open {
+        background-color: #eef1f3;
+    }
+
+        .guideline-display.open .toggle-icon,
+        .toggleMenuTrigger.open .toggle-icon {
+            vertical-align: top;
+            -moz-transform: scaleY(-1);
+            -o-transform: scaleY(-1);
+            -webkit-transform: scaleY(-1);
+            filter: FlipH;
+            -ms-filter: "FlipH";
+            transform: scaleY(-1);
+        }
+
+.toggleMenu a.ui-link {
+    padding: 10px 15px;
+    font-weight: normal;
+}
+
+.guideline-display .guideline-content,
+.toggleMenuContent {
+    position: relative;
+    background: #eef1f3;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition-property: opacity, height, padding;
+    transition-duration: 0.35s;
+    transition-timing-function: ease-out;
+}
+
+    .toggleMenuContent ul {
+        list-style-type: square;
+        padding: 0 0 0 15px;
+        margin: 15px 0;
+    }
+
+    .toggleMenuContent li {
+        padding: 5px 0;
+    }
+
+    .toggleMenuContent .footerBtn {
+        background-color: #fff;
+        background-image: url(https://m.cars.com/assets/images/chevron-large-up-mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-top: 1px solid #e1e1e1;
+        width: 100%;
+        height: 40px;
+    }
+
+    .toggleMenuContent .toggleContentWrapper .textContent {
+        padding: 10px 15px;
+    }
+
+    .toggleMenuContent .toggleContentWrapper .footerButton {
+        background: #fff;
+        height: 25px;
+    }
+
+    .toggleMenuContent.open {
+        opacity: 1;
+        height: 250px;
+    }
+
+/* *******************************************************
+    Write Review  styles
+******************************************************** */
+#reviewForm .instructions {
+    background-color: #EBF7FA;
+    border-radius: 5px;
+    color: #0C89A6;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 10px 0 20px;
+    padding: 10px;
+}
+
+#reviewForm .checkboxes {
+    padding: 0 0 10px;
+}
+
+    #reviewForm .checkboxes label {
+        clear: both;
+        float: left;
+        font-weight: normal;
+        padding: 10px 0 0 0;
+    }
+
+    #reviewForm .checkboxes input {
+        float: left;
+        margin-right: 10px;
+    }
+
+#reviewForm .ui-radio span {
+    float: right;
+}
+
+#reviewForm .radios {
+    padding: 0 0 20px;
+}
+
+    #reviewForm .radios span {
+        font-weight: normal;
+        margin: 0 24px 0 0;
+    }
+
+    #reviewForm .radios label {
+        padding: 10px 0 10px 10px;
+    }
+
+#reviewForm .reviewContainer {
+    margin: 0;
+    padding: 0 0 20px;
+}
+
+#reviewForm .radios .labelText,
+#reviewForm .checkboxes .labelText {
+    font-weight: bold;
+}
+
+#reviewForm .radios .labelText {
+    display: block;
+    margin: 0;
+    padding: 0 0 5px;
+}
+
+#reviewForm .texts .input-text {
+    margin-bottom: 0;
+}
+
+#reviewForm .texts label {
+    display: block;
+    padding: 10px 0;
+}
+
+#reviewForm .texts span {
+    display: block;
+    padding: 0 0 8px;
+}
+
+#reviewForm .reviewContainer label {
+    display: block;
+    padding: 0 0 7px;
+}
+
+#reviewForm em {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+#disclaimer {
+    font-size: 12px;
+    color: #999;
+}
+
+#reviewForm .checkboxes .notDealerRelated {
+    padding: 10px 0 20px 10px;
+}
+
+#reviewForm .reviewStars select.hidden {
+    display: none;
+}
+
+.preview-review {
+    margin: 18px 0;
+}
+
+    .preview-review a {
+        outline: 0;
+        padding: 6px;
+    }
+
+#details.previewEnabled #reviewForm {
+    display: none;
+    /*display: block;*/
+}
+
+#details.previewEnabled #reviewPreview {
+    display: block;
+    /*display: none;*/
+}
+
+.rating-0,
+.rating-1,
+.rating-2,
+.rating-3,
+.rating-4,
+.rating-5 {
+    width: 100px;
+    display: inline-block;
+}
+
+.rating-1,
+.rating-2,
+.rating-3,
+.rating-4,
+.rating-5 {
+    background-image: url(https://m.cars.com/assets/images/rating-bar-sprite.png);
+    background-repeat: no-repeat;
+    height: 5px;
+}
+
+#reviewPreview .reviewer-actions {
+    padding: 10px 0 0;
+}
+
+    #reviewPreview .reviewer-actions ul,
+    #reviewPreview .reviewer-recommendations ul,
+    #reviewPreview .rating-values {
+        list-style-type: none;
+        margin: 0 0 5px;
+        padding: 0;
+    }
+
+    #reviewPreview .reviewer-actions ul,
+    #reviewPreview .reviewer-recommendations ul {
+        margin-bottom: 20px;
+    }
+
+#reviewPreview .rating-values .rating-0:before {
+    content: "Not Applicable";
+    color: #5b707b;
+    font-size: 12px;
+}
+
+#reviewPreview .rating-values .rating-1 {
+    background-position: 0 -32px;
+}
+
+#reviewPreview .rating-values .rating-2 {
+    background-position: 0 -24px;
+}
+
+#reviewPreview .rating-values .rating-3 {
+    background-position: 0 -16px;
+}
+
+#reviewPreview .rating-values .rating-4 {
+    background-position: 0 -8px;
+}
+
+#reviewPreview .rating-values .rating-5 {
+    background-position: 0 0;
+}
+
+#details .confirmation {
+    background: #F1FFE3 url('https://m.cars.com/assets/images/success.png') no-repeat 15px 12px;
+    border-radius: 5px;
+    color: #7A8A5B;
+    line-height: 16px;
+    margin: 10px 0 20px;
+    padding: 10px 10px 10px 60px;
+}
+
+a.star, a.not-applicable {
+    background-image: url('https://m.cars.com/assets/images/review-star-text-sprite.png');
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+a.star {
+    width: 33px;
+    height: 33px;
+}
+
+a.not-applicable {
+    width: 55px;
+    height: 33px;
+}
+
+.star.inactive {
+    background-position: 0 0;
+}
+
+.star.active {
+    background-position: -33px 0;
+}
+
+.not-applicable.inactive {
+    background-position: 0 33px;
+}
+
+.not-applicable.active {
+    background-position: -55px 33px;
+}
+
+#controls .review-submit {
+    clear: both;
+    padding: 4px;
+    width: 100%;
+}
+
+/*********************************************************
+    DEALER REVIEWS
+*********************************************************/
+
+#dealersearch-dealerprofile .write-review-link a {
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+#writeReviewLink .write-review-link a {
+    font-weight: bold;
+    margin: 15px 0 5px;
+}
+
+#details #reviewPreview {
+    display: none;
+}
+
+.dealer-review ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dealer-review li {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+#reviewForm .inline-alert {
+    color: #c10;
+    font-size: 12px;
+    display: block;
+    line-height: normal;
+    font-weight: normal;
+}
+
+.guideline-display {
+    border-bottom: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+}
+
+    .guideline-display li,
+    .guideline-display p {
+        padding: 0 10px;
+    }
+
+    .guideline-display .guideline-title {
+        color: #098ae4;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .guideline-display .guideline-content {
+        opacity: 1;
+    }
+
+    .guideline-display .guideline-content-wrapper {
+        padding: 8px;
+    }
+
+    .guideline-display.open .guideline-content {
+        opacity: 1;
+    }
+
+.intro.about {
+    color: #333;
+    font-family: 'Effra Light', Effra, Helvetica Neue, HelveticaNeue, Helvetica-Neue, sans-serif;
+    font-size: 18px;
+}
+
+/*********************************************************
+    SELL & TRADE
+*********************************************************/
+
+#record-list .snt-result {
+    padding: 20px 15px 30px 15px;
+}
+
+.results .snt-distance {
+    display: table-cell;
+    color: #aaa;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.snt-address {
+    padding: 10px 0 !important;
+}
+
+.results .snt-distance span {
+    display: block;
+    margin-top: 11px;
+    font-weight: normal;
+}
+
+.appraisalCheckbox label.ui-btn-text {
+    font-weight: normal !important;
+}
+
+#compare-button-popup {
+    display: block;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.sellTradeIcon {
+    background: url(https://m.cars.com/assets/images/icon_sell_trade_blue.png);
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+}
+
+.dealerHasSellMid {
+    padding: 0 0 20px 0;
+}
+
+    .dealerHasSellMid a.compare-btn {
+        float: right;
+        width: 103px;
+        text-align: center;
+    }
+
+div#snt-compare-tray {
+    background: rgba(58, 73, 81, .96);
+    padding: 1.5% 5% 0 5%;
+    width: 90%;
+    opacity: 1;
+}
+
+    div#snt-compare-tray a#viewVehiclesToCompare {
+        color: #fff;
+    }
+
+.compare-tray-wrapper {
+    display: block;
+}
+
+.ui-hidden {
+    display: none;
+}
+
+/* global-nav.css */
+
+.and-banner {
+    background-repeat: repeat;
+    background-image: url(https://m.cars.com/assets/images/android_appbanner_pattern.png);
+    height: 70px;
+    width: 100%;
+    z-index: 1002;
+    position: relative;
+}
+
+    .and-banner table {
+        width: 100%;
+        margin-bottom: 0px;
+        border-bottom: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .and-banner td {
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+    }
+
+        .and-banner td.close-button-div {
+            padding-top: 8px;
+            vertical-align: top;
+        }
+
+    .and-banner img.close-button {
+        margin-top: 0px;
+        margin-left: -5px;
+    }
+
+    .and-banner td.icon {
+        text-align: left;
+    }
+
+    .and-banner img.icon {
+        border-radius: 3px;
+        margin: 5px;
+    }
+
+    .and-banner p.title {
+        font-family: Helvetica;
+        font-size: 9pt;
+        color: #ffffff;
+        text-shadow: 3px 2px #111111;
+        margin: 0px;
+        padding-bottom: -8px;
+    }
+
+    .and-banner p.subtitle {
+        font-family: Helvetica;
+        font-size: 7pt;
+        color: #ffffff;
+        text-shadow: 3px 2px #111111;
+        margin: 0px;
+    }
+
+    .and-banner td.button-td {
+        text-align: right;
+    }
+
+    .and-banner td.button-div {
+        display: inline;
+        position: relative;
+    }
+
+    .and-banner p.install-button {
+        color: #ffffff;
+        font-size: 9pt;
+        display: inline;
+        position: relative;
+        background-image: url(https://m.cars.com/assets/images/android_appbanner_button.png);
+        background-position: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+.app-banner {
+    background-color: #ffffff;
+    height: 60px;
+    width: 100%;
+    position: relative;
+    z-index: 1002;
+}
+
+    .app-banner table {
+        width: 100%;
+        margin-bottom: 0px;
+        border-bottom: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .app-banner td {
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+    }
+
+        .app-banner td.close-button-div {
+            vertical-align: top;
+        }
+
+    .app-banner img.close-button {
+        margin-top: 2px;
+        margin-left: -8px;
+    }
+
+    .app-banner td.icon {
+        text-align: left;
+    }
+
+    .app-banner img.icon {
+        margin: 5px;
+    }
+
+    .app-banner p.title {
+        font-family: Helvetica;
+        font-size: 9pt;
+        color: #000000;
+        font-weight: bold;
+        margin: 0px;
+    }
+
+    .app-banner p.subtitle {
+        font-family: Helvetica;
+        font-size: 8pt;
+        color: #000000;
+        font-weight: lighter;
+        margin: 0px;
+    }
+
+    .app-banner td.button-td {
+        text-align: right;
+    }
+
+    .app-banner td.button-div {
+        display: inline;
+        position: relative;
+    }
+
+    .app-banner p.install-button {
+        color: #007aff;
+        font-size: 12pt;
+        display: inline;
+        position: relative;
+        background-image: url(https://m.cars.com/assets/images/apple_appbanner_button.png);
+        background-position: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+.global-navbar {
+    position: absolute;
+    top: -492px;
+    z-index: 1002;
+    width: 100%;
+    height: 468px;
+    font-size: 75%;
+    background: #3a4951;
+    padding: 20px 0 0 0;
+}
+
+    .global-navbar a {
+        color: #fff;
+        display: block;
+        padding: 10px 0 10px 80px;
+        border-bottom: 2px solid #383f42;
+        font-size: 21px;
+        font-family: Effra, Arial, Helvetica, sans-serif /*{global-font-family}*/;
+        font-weight: normal;
+        margin: 0 0 0 0;
+        background: url(https://m.cars.com/lib/images/ui-panel-icons.png) no-repeat 15px -62px transparent;
+        background-size: 48px;
+    }
+
+        .global-navbar a.close {
+            border: 0;
+            background-position: center -430px;
+            background-size: 48px;
+        }
+
+        .global-navbar a.findyourcar {
+            background-position: 15px -62px;
+        }
+
+        .global-navbar a.bookvalue {
+            background-position: 15px -106px;
+        }
+
+        .global-navbar a.research {
+            background-position: 15px -155px;
+        }
+
+        .global-navbar a.sellandtrade {
+            background-position: 15px -203px;
+        }
+
+        .global-navbar a.findadealer {
+            background-position: 15px -251px;
+        }
+
+        .global-navbar a.autorepair {
+            background: url(https://m.cars.com/assets/images/snr_icon.png) no-repeat 24px 8px transparent;
+            background-size: 26px;
+        }
+
+        .global-navbar a.calculators {
+            background-position: 15px -299px;
+        }
+
+        .global-navbar a.account {
+            background-position: 15px -341px;
+        }
+
+        .global-navbar a.favorites {
+            background-position: 15px -392px;
+        }
+
+.global-mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.15);
+    z-index: 999;
+}
+
+#togglenav-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background: url(https://m.cars.com/lib/images/ui-panel-icons.png) no-repeat center -14px transparent;
+    height: 44px;
+    width: 48px;
+    background-size: 110%;
+}
+
+#carslogo {
+    height: 60px;
+}
+
+.ui-header {
+    z-index: 1000 !important;
+    height: 20px;
+}
+
+    .ui-header .ui-title-wrapper {
+        z-index: 1003;
+        position: absolute;
+        width: 100%;
+        height: 44px;
+        border: 0px;
+        margin-bottom: 24px;
+        background-image: linear-gradient(left, rgb(119,40,128)0%, rgb(39,3,92) 100%);
+        background-image: -o-linear-gradient(left, rgb(119,40,128) 0%, rgb(39,3,92) 100%);
+        background-image: -moz-linear-gradient(left, rgb(119,40,128) 0%, rgb(39,3,92) 100%);
+        background-image: -webkit-linear-gradient(left, rgb(119,40,128) 0%, rgb(39,3,92) 100%);
+        background-image: -ms-linear-gradient(left, rgb(119,40,128) 0%, rgb(39,3,92) 100%);
+        background-image: -webkit-gradient( linear, left top, right top, color-stop(0, rgb(119,40,128)), color-stop(1, rgb(39,3,92)) );
+    }
+
+    .ui-header .ui-title {
+        background-position: 10px 17px;
+        height: 60px;
+        position: relative;
+        z-index: 1;
+    }
+
+.ui-page-active div[data-role=content] {
+    position: relative;
+}
+
+.hyperdrive-dealer-unit h2.sticky {
+    z-index: 998;
+}
+
+
+.ui-content {
+    padding-top: 35px;
+}
+
+.global-navbar .new-label {
+    background-color: #fff;
+    color: #0C92FF;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+/* inline add more */
+.fb_hidden {
+    position: absolute;
+    top: -10000px;
+    z-index: 10001;
+}
+
+.fb_reposition {
+    overflow: hidden;
+    position: relative;
+}
+
+.fb_invisible {
+    display: none;
+}
+
+.fb_reset {
+    background: none;
+    border: 0;
+    border-spacing: 0;
+    color: #000;
+    cursor: auto;
+    direction: ltr;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+    text-shadow: none;
+    text-transform: none;
+    visibility: visible;
+    white-space: normal;
+    word-spacing: normal;
+}
+
+    .fb_reset > div {
+        overflow: hidden;
+    }
+
+.fb_link img {
+    border: none;
+}
+
+@keyframes fb_transform {
+    from {
+        opacity: 0;
+        transform: scale(.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.fb_animate {
+    animation: fb_transform .3s forwards;
+}
+
+.fb_dialog {
+    background: rgba(82, 82, 82, .7);
+    position: absolute;
+    top: -10000px;
+    z-index: 10001;
+}
+
+.fb_reset .fb_dialog_legacy {
+    overflow: visible;
+}
+
+.fb_dialog_advanced {
+    padding: 10px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.fb_dialog_content {
+    background: #fff;
+    color: #333;
+}
+
+.fb_dialog_close_icon {
+    background: url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;
+    _background-image: url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    position: absolute;
+    right: 18px;
+    top: 17px;
+    width: 15px;
+}
+
+.fb_dialog_mobile .fb_dialog_close_icon {
+    top: 5px;
+    left: 5px;
+    right: auto;
+}
+
+.fb_dialog_padding {
+    background-color: transparent;
+    position: absolute;
+    width: 1px;
+    z-index: -1;
+}
+
+.fb_dialog_close_icon:hover {
+    background: url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;
+    _background-image: url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);
+}
+
+.fb_dialog_close_icon:active {
+    background: url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;
+    _background-image: url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);
+}
+
+.fb_dialog_loader {
+    background-color: #f6f7f9;
+    border: 1px solid #606060;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.fb_dialog_top_left, .fb_dialog_top_right, .fb_dialog_bottom_left, .fb_dialog_bottom_right {
+    height: 10px;
+    width: 10px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.fb_dialog_top_left {
+    background: url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;
+    left: -10px;
+    top: -10px;
+}
+
+.fb_dialog_top_right {
+    background: url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;
+    right: -10px;
+    top: -10px;
+}
+
+.fb_dialog_bottom_left {
+    background: url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;
+    bottom: -10px;
+    left: -10px;
+}
+
+.fb_dialog_bottom_right {
+    background: url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;
+    right: -10px;
+    bottom: -10px;
+}
+
+.fb_dialog_vert_left, .fb_dialog_vert_right, .fb_dialog_horiz_top, .fb_dialog_horiz_bottom {
+    position: absolute;
+    background: #525252;
+    filter: alpha(opacity=70);
+    opacity: .7;
+}
+
+.fb_dialog_vert_left, .fb_dialog_vert_right {
+    width: 10px;
+    height: 100%;
+}
+
+.fb_dialog_vert_left {
+    margin-left: -10px;
+}
+
+.fb_dialog_vert_right {
+    right: 0;
+    margin-right: -10px;
+}
+
+.fb_dialog_horiz_top, .fb_dialog_horiz_bottom {
+    width: 100%;
+    height: 10px;
+}
+
+.fb_dialog_horiz_top {
+    margin-top: -10px;
+}
+
+.fb_dialog_horiz_bottom {
+    bottom: 0;
+    margin-bottom: -10px;
+}
+
+.fb_dialog_iframe {
+    line-height: 0;
+}
+
+.fb_dialog_content .dialog_title {
+    background: #6d84b4;
+    border: 1px solid #365899;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+    .fb_dialog_content .dialog_title > span {
+        background: url(https://static.xx.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;
+        float: left;
+        padding: 5px 0 7px 26px;
+    }
+
+body.fb_hidden {
+    -webkit-transform: none;
+    height: 100%;
+    margin: 0;
+    overflow: visible;
+    position: absolute;
+    top: -10000px;
+    left: 0;
+    width: 100%;
+}
+
+.fb_dialog.fb_dialog_mobile.loading {
+    background: url(https://static.xx.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 10001;
+}
+
+    .fb_dialog.fb_dialog_mobile.loading.centered {
+        width: auto;
+        height: auto;
+        min-height: initial;
+        min-width: initial;
+        background: none;
+    }
+
+        .fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner {
+            width: 100%;
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content {
+            background: none;
+        }
+
+.loading.centered #fb_dialog_loader_close {
+    color: #fff;
+    display: block;
+    padding-top: 20px;
+    clear: both;
+    font-size: 18px;
+}
+
+#fb-root #fb_dialog_ipad_overlay {
+    background: rgba(0, 0, 0, .45);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: 10000;
+}
+
+    #fb-root #fb_dialog_ipad_overlay.hidden {
+        display: none;
+    }
+
+.fb_dialog.fb_dialog_mobile.loading iframe {
+    visibility: hidden;
+}
+
+.fb_dialog_content .dialog_header {
+    -webkit-box-shadow: white 0 1px 1px -1px inset;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));
+    border-bottom: 1px solid;
+    border-color: #1d4088;
+    color: #fff;
+    font: 14px Helvetica, sans-serif;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+    .fb_dialog_content .dialog_header table {
+        -webkit-font-smoothing: subpixel-antialiased;
+        height: 43px;
+        width: 100%;
+    }
+
+    .fb_dialog_content .dialog_header td.header_left {
+        font-size: 12px;
+        padding-left: 5px;
+        vertical-align: middle;
+        width: 60px;
+    }
+
+    .fb_dialog_content .dialog_header td.header_right {
+        font-size: 12px;
+        padding-right: 5px;
+        vertical-align: middle;
+        width: 60px;
+    }
+
+.fb_dialog_content .touchable_button {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));
+    border: 1px solid #29487d;
+    -webkit-background-clip: padding-box;
+    -webkit-border-radius: 3px;
+    -webkit-box-shadow: rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;
+    display: inline-block;
+    margin-top: 3px;
+    max-width: 85px;
+    line-height: 18px;
+    padding: 4px 12px;
+    position: relative;
+}
+
+.fb_dialog_content .dialog_header .touchable_button input {
+    border: none;
+    background: none;
+    color: #fff;
+    font: 12px Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 2px -12px;
+    padding: 2px 6px 3px 6px;
+    text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0;
+}
+
+.fb_dialog_content .dialog_header .header_center {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.fb_dialog_content .dialog_content {
+    background: url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;
+    border: 1px solid #555;
+    border-bottom: 0;
+    border-top: 0;
+    height: 150px;
+}
+
+.fb_dialog_content .dialog_footer {
+    background: #f6f7f9;
+    border: 1px solid #555;
+    border-top-color: #ccc;
+    height: 40px;
+}
+
+#fb_dialog_loader_close {
+    float: left;
+}
+
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_button {
+    text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0;
+}
+
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon {
+    visibility: hidden;
+}
+
+#fb_dialog_loader_spinner {
+    animation: rotateSpinner 1.2s linear infinite;
+    background-color: transparent;
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 24px;
+    width: 24px;
+}
+
+@keyframes rotateSpinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.fb_iframe_widget {
+    display: inline-block;
+    position: relative;
+}
+
+    .fb_iframe_widget span {
+        display: inline-block;
+        position: relative;
+        text-align: justify;
+    }
+
+    .fb_iframe_widget iframe {
+        position: absolute;
+    }
+
+.fb_iframe_widget_fluid_desktop, .fb_iframe_widget_fluid_desktop span, .fb_iframe_widget_fluid_desktop iframe {
+    max-width: 100%;
+}
+
+    .fb_iframe_widget_fluid_desktop iframe {
+        min-width: 220px;
+        position: relative;
+    }
+
+.fb_iframe_widget_lift {
+    z-index: 1;
+}
+
+.fb_hide_iframes iframe {
+    position: relative;
+    left: -10000px;
+}
+
+.fb_iframe_widget_loader {
+    position: relative;
+    display: inline-block;
+}
+
+.fb_iframe_widget_fluid {
+    display: inline;
+}
+
+    .fb_iframe_widget_fluid span {
+        width: 100%;
+    }
+
+.fb_iframe_widget_loader iframe {
+    min-height: 32px;
+    z-index: 2;
+    zoom: 1;
+}
+
+.fb_iframe_widget_loader .FB_Loader {
+    background: url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;
+    height: 32px;
+    width: 32px;
+    margin-left: -16px;
+    position: absolute;
+    left: 50%;
+    z-index: 4;
+}
+
+#gigyaLoginButton td, #gigyaLoginButton table {
+    width: auto;
+    font-size: 1px;
+    vertical-align: top;
+    border-collapse: separate;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Add more */
+
+
