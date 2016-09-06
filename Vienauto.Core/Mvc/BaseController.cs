@@ -13,14 +13,6 @@ namespace Vienauto.Core.Mvc
 {
     public abstract class BaseController : Controller
     {
-        public bool IsAjax
-        {
-            get
-            {
-                return Request.IsAjaxRequest();
-            }
-        }
-
         /// <summary>
         /// The action is successful, and returns a json object for updating UI
         /// </summary>
@@ -112,6 +104,14 @@ namespace Vienauto.Core.Mvc
                 viewResult.View.Render(viewContext, sw);
 
                 return sw.GetStringBuilder().ToString().Trim();
+            }
+        }
+
+        public bool IsAjax
+        {
+            get
+            {
+                return Request.IsAjaxRequest();
             }
         }
 
