@@ -19,7 +19,8 @@ namespace VienautoMobile.Controllers
         /// <param name="rememberMe"></param>
         /// Remember option
         /// <returns></returns>
-        protected bool LoginAction<T>(Func<ServiceResult<T>> authenticateFunc, string[] claimNames, bool rememberMe = false)
+        protected bool LoginAction<T>(Func<ServiceResult<T>> authenticateFunc, string[] claimNames, bool rememberMe = false) 
+            where T : class
         {
             var resultAuthenticate = authenticateFunc();
             if (resultAuthenticate.HasErrors)
