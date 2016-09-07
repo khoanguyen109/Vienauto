@@ -202,6 +202,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebInstaller.cs" />
     <Compile Include="Filters\Authentication\UserAuthenticatedAttribute.cs" />
+    <Compile Include="Filters\Exception\LogErrorExceptionAttribute.cs" />
     <Compile Include="Models\Form\AccountFormModel.cs" />
     <Compile Include="Configuration\AppSetting.cs" />
     <Compile Include="Controllers\AccountController.cs" />
@@ -276,7 +277,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Assets\font\" />
-    <Folder Include="Filters\Exception\" />
     <Folder Include="Models\View\" />
   </ItemGroup>
   <ItemGroup>
@@ -284,6 +284,10 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Library\vdcore\vdCore.csproj">
+      <Project>{064b166d-3f8e-4a52-beb7-ceee1674f663}</Project>
+      <Name>vdCore</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Vienauto.Core\Vienauto.Core.csproj">
       <Project>{381d5431-9653-4963-87fa-1ec7b974cefe}</Project>
       <Name>Vienauto.Core</Name>

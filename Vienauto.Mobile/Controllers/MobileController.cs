@@ -1,10 +1,8 @@
 ﻿using System;
+using System.Reflection;
 using Vienauto.Core.Mvc;
-using Vienauto.Service.Dto;
-using System.Security.Claims;
 using Vienauto.Service.Result;
 using System.Collections.Generic;
-using System.Reflection;
 
 namespace VienautoMobile.Controllers
 {

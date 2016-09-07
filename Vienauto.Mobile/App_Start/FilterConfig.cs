@@ -1,6 +1,5 @@
-﻿using System.Web;
-using System.Web.Mvc;
-using VienautoMobile.Filters;
+﻿using System.Web.Mvc;
+using VienautoMobile.Filters.Exception;
 
 namespace VienautoRemake
 {
@@ -9,6 +8,7 @@ namespace VienautoRemake
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
+            filters.Add(new LogErrorExceptionAttribute());
         }
     }
 }

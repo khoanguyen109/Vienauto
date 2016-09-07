@@ -4,7 +4,6 @@ using Vienauto.Service.Application;
 
 namespace VienautoMobile.Controllers
 {
-    [Authorize]
     public class AccountController : MobileController
     {
         private readonly IAccountService _accountService;
@@ -19,7 +18,6 @@ namespace VienautoMobile.Controllers
             _accountService = accountService;
         }
 
-        [AllowAnonymous]
         public ActionResult SignIn(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
@@ -27,7 +25,6 @@ namespace VienautoMobile.Controllers
         }
 
         [HttpPost]
-        [AllowAnonymous]
         [ValidateAntiForgeryToken]
         public ActionResult SignIn(AccountFormModel model, string returnUrl)
         {

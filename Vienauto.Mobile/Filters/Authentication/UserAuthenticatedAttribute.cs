@@ -6,9 +6,7 @@ namespace VienautoMobile.Filters.Authentication
     public class UserAuthenticatedAttribute : FilterAttribute, IAuthenticationFilter
     {
         public void OnAuthentication(AuthenticationContext context)
-        {
-
-        }
+        { }
 
         public void OnAuthenticationChallenge(AuthenticationChallengeContext context)
         {
